@@ -20,3 +20,10 @@ gem "test-unit"
 gem "test-unit-notify"
 gem "test-unit-capybara"
 gem "test-unit-rr"
+
+group :development do
+  gem "rake"
+  gem "jeweler"
+  gem "yard"
+  gem "packnga"
+end
