@@ -4,13 +4,13 @@ h1. test-unit-rails
 
 h2. Description
 
-test-unit-rails is a Rails adapter for Test::Unit 2.x. You can use full Test::Unit 2.x features, "RR":https://rubygems.org/gems/rr integration and "Capybara":https://rubygems.org/gems/capybara integration with test-unit-rails.
+test-unit-rails is a Rails adapter for test-unit 2. You can use full test-unit 2 features, "RR":https://rubygems.org/gems/rr integration and "Capybara":https://rubygems.org/gems/capybara integration with test-unit-rails.
 
-Rails supports Test::Unit 1.x and MiniTest but doesn't suppot Test::Unit 2.x. Rails with Test::Unit 2.x works but is not fully worked.
+Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't suppot test-unit 2. Rails with test-unit 2 works but is not fully worked.
 
 h2. Install
 
-You need to add the following codes to your Gemfile:
+You add the following codes to your Gemfile:
 
 <pre>
 group :development, :test do

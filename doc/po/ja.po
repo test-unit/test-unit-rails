@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: test-unit-rails 1.0.0\n"
-"POT-Creation-Date: 2012-01-02 22:17+0900\n"
-"PO-Revision-Date: 2012-01-02 22:20+0900\n"
+"POT-Creation-Date: 2012-01-02 22:43+0900\n"
+"PO-Revision-Date: 2012-01-02 22:44+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -447,9 +447,9 @@ msgstr ""
 msgid "File: README"
 msgstr ""
 
-#: doc/reference/en/index.html:57(h1) doc/reference/en/index.html:72(span)
+#: doc/reference/en/index.html:57(h1) doc/reference/en/index.html:66(span)
 #: doc/reference/en/file.README.html:57(h1)
-#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/file.README.html:66(span)
 #: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
 #: doc/reference/en/_index.html:55(h1)
 msgid "test-unit-rails"
@@ -463,132 +463,126 @@ msgstr "Webサイト"
 msgid "Description"
 msgstr "説明"
 
-#: doc/reference/en/index.html:62(a) doc/reference/en/file.README.html:62(a)
+#: doc/reference/en/index.html:60(a) doc/reference/en/file.README.html:60(a)
 msgid "RR"
 msgstr ""
 
-#: doc/reference/en/index.html:63(a) doc/reference/en/file.README.html:63(a)
+#: doc/reference/en/index.html:60(a) doc/reference/en/file.README.html:60(a)
 msgid "Capybara"
 msgstr ""
 
 #: doc/reference/en/index.html:60(p) doc/reference/en/file.README.html:60(p)
 msgid ""
-"test-unit-rails is a Rails adapter for Test::Unit 2.×. You can use full "
-"Test::Unit 2.x features, <placeholder-1/> integration and <placeholder-2/> "
+"test-unit-rails is a Rails adapter for test-unit 2. You can use full test-"
+"unit 2 features, <placeholder-1/> integration and <placeholder-2/> "
 "integration with test-unit-rails."
-msgstr ""
-"test-unit-railsはTest::Unit2.x用のRailsアダプターです。test-unit-railsを使う"
-"とTest::Unit 2.xのフル機能と<placeholder-1/>・<placeholder-2/>との連携機能を"
-"使うことができます。"
+msgstr "test-unit-railsはtest-unit 2用のRailsアダプターです。test-unit-railsを使うとtest-unit 2のフル機能と<placeholder-1/>・<placeholder-2/>との連携機能を使うことができます。"
 
-#: doc/reference/en/index.html:65(p) doc/reference/en/file.README.html:65(p)
+#: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
 msgid ""
-"Rails supports Test::Unit 1.x and MiniTest but doesn’t suppot Test::Unit 2."
-"×. Rails with Test::Unit 2.x works but is not fully worked."
-msgstr ""
-"RailsはTest::Unit 1.xとMiniTestをサポートしていますがTest::Unit 2.xはサポート"
-"していません。RailsとTest::Unit 2.xの組み合わせは動きますが、完全に動くという"
-"わけではありません。"
+"Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn’t "
+"suppot test-unit 2. Rails with test-unit 2 works but is not fully worked."
+msgstr "RailsはRuby 1.8に同梱されているTest::UnitとMiniTestをサポートしていますがtest-unit 2はサポートしていません。Railsとtest-unit 2の組み合わせは動きますが、完全に動くというわけではありません。"
 
-#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
+#: doc/reference/en/index.html:62(h2) doc/reference/en/file.README.html:62(h2)
 msgid "Install"
 msgstr "インストール"
 
-#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
-msgid "You need to add the following codes to your Gemfile:"
+#: doc/reference/en/index.html:63(p) doc/reference/en/file.README.html:63(p)
+msgid "You add the following codes to your Gemfile:"
 msgstr "以下のコードをGemfileに追加してください。"
 
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/index.html:65(span)
+#: doc/reference/en/file.README.html:65(span)
 msgid "group"
 msgstr ""
 
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/index.html:65(span)
+#: doc/reference/en/file.README.html:65(span)
 msgid ":development"
 msgstr ""
 
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/index.html:65(span)
+#: doc/reference/en/file.README.html:65(span)
 msgid ","
 msgstr ""
 
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/index.html:65(span)
+#: doc/reference/en/file.README.html:65(span)
 msgid ":test"
 msgstr ""
 
-#: doc/reference/en/index.html:71(span)
-#: doc/reference/en/file.README.html:71(span)
+#: doc/reference/en/index.html:65(span)
+#: doc/reference/en/file.README.html:65(span)
 msgid "do"
 msgstr ""
 
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/index.html:66(span)
+#: doc/reference/en/file.README.html:66(span)
 msgid "gem"
 msgstr ""
 
-#: doc/reference/en/index.html:72(span) doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:72(span)
-#: doc/reference/en/file.README.html:83(span)
+#: doc/reference/en/index.html:66(span) doc/reference/en/index.html:76(span)
+#: doc/reference/en/file.README.html:66(span)
+#: doc/reference/en/file.README.html:76(span)
 msgid "'"
 msgstr ""
 
-#: doc/reference/en/index.html:73(span)
-#: doc/reference/en/file.README.html:73(span)
+#: doc/reference/en/index.html:67(span)
+#: doc/reference/en/file.README.html:67(span)
 msgid "end"
 msgstr ""
 
-#: doc/reference/en/index.html:75(p) doc/reference/en/file.README.html:75(p)
+#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
 msgid "And you update bundled gems:"
 msgstr "バンドルするgemをアップデートします。"
 
-#: doc/reference/en/index.html:76(pre)
-#: doc/reference/en/file.README.html:76(pre)
+#: doc/reference/en/index.html:70(pre)
+#: doc/reference/en/file.README.html:70(pre)
 msgid "% bundle update"
 msgstr ""
 
-#: doc/reference/en/index.html:79(code)
-#: doc/reference/en/file.README.html:79(code)
+#: doc/reference/en/index.html:73(code)
+#: doc/reference/en/file.README.html:73(code)
 msgid "\"require 'rails/test_help'\""
 msgstr ""
 
-#: doc/reference/en/index.html:79(p) doc/reference/en/file.README.html:79(p)
+#: doc/reference/en/index.html:73(p) doc/reference/en/file.README.html:73(p)
 msgid ""
 "You replace <placeholder-1/> in your test/test_helper.rb with the following "
 "codes:"
 msgstr "test/test_helper.rb内の<placeholder-1/>を以下のコードで置き換えます。"
 
-#: doc/reference/en/index.html:82(span)
-#: doc/reference/en/file.README.html:82(span)
+#: doc/reference/en/index.html:75(span)
+#: doc/reference/en/file.README.html:75(span)
 msgid "# require 'rails/test_help'"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
+#: doc/reference/en/index.html:76(span)
+#: doc/reference/en/file.README.html:76(span)
 msgid "require"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
+#: doc/reference/en/index.html:76(span)
+#: doc/reference/en/file.README.html:76(span)
 msgid "test/unit/rails"
 msgstr ""
 
-#: doc/reference/en/index.html:85(p) doc/reference/en/file.README.html:85(p)
+#: doc/reference/en/index.html:78(p) doc/reference/en/file.README.html:78(p)
 msgid ""
 "Now you can use full test-unit 2.x features, RR integration and Capybara "
 "integration."
 msgstr "これでTest::Unit 2.xのフル機能とRR・Capybaraとの連携機能を使えます。"
 
-#: doc/reference/en/index.html:87(h2) doc/reference/en/file.README.html:87(h2)
+#: doc/reference/en/index.html:79(h2) doc/reference/en/file.README.html:79(h2)
 msgid "License"
 msgstr "ライセンス"
 
-#: doc/reference/en/index.html:88(p) doc/reference/en/file.README.html:88(p)
+#: doc/reference/en/index.html:80(p) doc/reference/en/file.README.html:80(p)
 msgid "LGPLv2.1 or later."
 msgstr "LGPLv2.1またはそれ以降のバージョン。"
 
-#: doc/reference/en/index.html:89(p) doc/reference/en/file.README.html:89(p)
+#: doc/reference/en/index.html:81(p) doc/reference/en/file.README.html:81(p)
 msgid ""
 "(Kouhei Sutou has a right to change the license including contributed "
 "patches.)"
@@ -596,11 +590,11 @@ msgstr ""
 "（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
 "権利を持ちます。）"
 
-#: doc/reference/en/index.html:91(h2) doc/reference/en/file.README.html:91(h2)
+#: doc/reference/en/index.html:82(h2) doc/reference/en/file.README.html:82(h2)
 msgid "Authors"
 msgstr "作者"
 
-#: doc/reference/en/index.html:93(li) doc/reference/en/file.README.html:93(li)
+#: doc/reference/en/index.html:84(li) doc/reference/en/file.README.html:84(li)
 msgid "Kouhei Sutou"
 msgstr ""
 
