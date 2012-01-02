@@ -1,0 +1,5 @@
+/pkg/
+/*.gemspec
+/.yardoc/
+/doc/po/*.pot
+/doc/reference/

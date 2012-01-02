@@ -1,0 +1,818 @@
+# ja.po for test-unit-rails Reference.
+# Copyright (C) 2012 Kouhei Sutou
+# This file is distributed under the same license as the test-unit-rails package.
+# Kouhei Sutou <kou@clear-code.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: test-unit-rails 1.0.0\n"
+"POT-Creation-Date: 2012-01-02 22:17+0900\n"
+"PO-Revision-Date: 2012-01-02 22:20+0900\n"
+"Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: doc/reference/en/Test/Unit/Rails.html:6(title)
+msgid "Module: Test::Unit::Rails &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:17(script)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:17(script)
+msgid "relpath = '../..'; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:29(script)
+#: doc/reference/en/Test/Unit.html:29(script)
+#: doc/reference/en/file.news.html:29(script)
+#: doc/reference/en/top-level-namespace.html:29(script)
+#: doc/reference/en/Test.html:29(script)
+#: doc/reference/en/index.html:29(script)
+#: doc/reference/en/MiniTest.html:29(script)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:29(script)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:29(script)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:29(script)
+#: doc/reference/en/file.README.html:29(script)
+#: doc/reference/en/_index.html:27(script)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:29(script)
+msgid "if (window.top.frames.main) document.body.className = 'frames';"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:36(a)
+msgid "Index (R)"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:37(a)
+#: doc/reference/en/Test/Unit.html:37(a)
+#: doc/reference/en/top-level-namespace.html:81(a)
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/Test.html:39(span) doc/reference/en/MiniTest.html:88(span)
+#: doc/reference/en/_index.html:175(a)
+msgid "Test"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:37(a)
+#: doc/reference/en/Test/Unit.html:39(span)
+#: doc/reference/en/class_list.html:42(a) doc/reference/en/Test.html:103(a)
+#: doc/reference/en/MiniTest.html:88(span) doc/reference/en/_index.html:191(a)
+msgid "Unit"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:39(span)
+#: doc/reference/en/Test/Unit.html:84(a)
+#: doc/reference/en/class_list.html:42(a) doc/reference/en/_index.html:145(a)
+msgid "Rails"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:42(span)
+#: doc/reference/en/Test/Unit.html:42(span)
+#: doc/reference/en/file.news.html:40(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
+#: doc/reference/en/Test.html:42(span) doc/reference/en/index.html:40(span)
+#: doc/reference/en/MiniTest.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(span)
+#: doc/reference/en/file.README.html:40(span)
+#: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:42(span)
+msgid "("
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:42(a)
+#: doc/reference/en/Test/Unit.html:42(a) doc/reference/en/file.news.html:40(a)
+#: doc/reference/en/top-level-namespace.html:42(a)
+#: doc/reference/en/Test.html:42(a) doc/reference/en/index.html:40(a)
+#: doc/reference/en/MiniTest.html:42(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(a)
+#: doc/reference/en/file.README.html:40(a) doc/reference/en/_index.html:38(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:42(a)
+msgid "no frames"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:42(span)
+#: doc/reference/en/Test/Unit.html:42(span)
+#: doc/reference/en/file.news.html:40(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
+#: doc/reference/en/Test.html:42(span) doc/reference/en/index.html:40(span)
+#: doc/reference/en/MiniTest.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(span)
+#: doc/reference/en/file.README.html:40(span)
+#: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:42(span)
+msgid ")"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:47(a)
+#: doc/reference/en/Test/Unit.html:47(a) doc/reference/en/file.news.html:45(a)
+#: doc/reference/en/top-level-namespace.html:47(a)
+#: doc/reference/en/class_list.html:28(h1) doc/reference/en/Test.html:47(a)
+#: doc/reference/en/index.html:45(a) doc/reference/en/MiniTest.html:47(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:47(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:47(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:47(a)
+#: doc/reference/en/file.README.html:45(a) doc/reference/en/_index.html:43(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:47(a)
+msgid "Class List"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:49(a)
+#: doc/reference/en/Test/Unit.html:49(a) doc/reference/en/file.news.html:47(a)
+#: doc/reference/en/top-level-namespace.html:49(a)
+#: doc/reference/en/method_list.html:28(h1) doc/reference/en/Test.html:49(a)
+#: doc/reference/en/index.html:47(a) doc/reference/en/MiniTest.html:49(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:49(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:49(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:49(a)
+#: doc/reference/en/file.README.html:47(a) doc/reference/en/_index.html:45(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:49(a)
+msgid "Method List"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:51(a)
+#: doc/reference/en/Test/Unit.html:51(a) doc/reference/en/file.news.html:49(a)
+#: doc/reference/en/top-level-namespace.html:51(a)
+#: doc/reference/en/Test.html:51(a) doc/reference/en/index.html:49(a)
+#: doc/reference/en/MiniTest.html:51(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:51(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:51(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:51(a)
+#: doc/reference/en/file.README.html:49(a)
+#: doc/reference/en/file_list.html:28(h1) doc/reference/en/_index.html:47(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:51(a)
+msgid "File List"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:59(h1)
+msgid "Module: Test::Unit::Rails"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:74(dt)
+#: doc/reference/en/Test/Unit.html:74(dt) doc/reference/en/Test.html:74(dt)
+#: doc/reference/en/MiniTest.html:74(dt)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:74(dt)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:74(dt)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:74(dt)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:93(dt)
+msgid "Defined in:"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:75(dd)
+#: doc/reference/en/Test/Unit.html:75(dd) doc/reference/en/Test.html:75(dd)
+msgid "lib/test/unit/rails/version.rb"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:81(h2)
+#: doc/reference/en/MiniTest.html:81(h2)
+msgid "Constant Summary"
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:85(dt)
+msgid "VERSION ="
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:88(span)
+msgid "\""
+msgstr ""
+
+#: doc/reference/en/Test/Unit/Rails.html:88(span)
+msgid "1.0.0"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:6(title)
+msgid "Module: Test::Unit &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:17(script)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:17(script)
+msgid "relpath = '..'; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:36(a)
+msgid "Index (U)"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:59(h1)
+msgid "Module: Test::Unit"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:80(h2)
+#: doc/reference/en/top-level-namespace.html:77(h2)
+#: doc/reference/en/Test.html:99(h2)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:80(h2)
+msgid "Defined Under Namespace"
+msgstr ""
+
+#: doc/reference/en/Test/Unit.html:84(strong)
+#: doc/reference/en/top-level-namespace.html:81(strong)
+#: doc/reference/en/Test.html:103(strong)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(strong)
+msgid "Modules:"
+msgstr ""
+
+#: doc/reference/en/file.news.html:6(title)
+msgid "File: news &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/file.news.html:17(script)
+#: doc/reference/en/top-level-namespace.html:17(script)
+#: doc/reference/en/Test.html:17(script)
+#: doc/reference/en/index.html:17(script)
+#: doc/reference/en/MiniTest.html:17(script)
+#: doc/reference/en/file.README.html:17(script)
+#: doc/reference/en/_index.html:15(script)
+msgid "relpath = ''; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/file.news.html:36(a)
+#: doc/reference/en/top-level-namespace.html:36(a)
+#: doc/reference/en/index.html:36(a) doc/reference/en/file.README.html:36(a)
+msgid "Index"
+msgstr ""
+
+#: doc/reference/en/file.news.html:37(span)
+msgid "File: news"
+msgstr ""
+
+#: doc/reference/en/file.news.html:57(h1)
+msgid "News"
+msgstr "お知らせ"
+
+#: doc/reference/en/file.news.html:58(h2)
+msgid "1.0.0 – 2012-1-2"
+msgstr ""
+
+#: doc/reference/en/file.news.html:59(p)
+msgid "The first release!!!"
+msgstr "最初のリリース！"
+
+#: doc/reference/en/top-level-namespace.html:6(title)
+msgid "Top Level Namespace &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:39(span)
+#: doc/reference/en/top-level-namespace.html:59(h1)
+#: doc/reference/en/class_list.html:41(a)
+#: doc/reference/en/class_list.html:42(small)
+msgid "Top Level Namespace"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:81(a)
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/MiniTest.html:39(span) doc/reference/en/_index.html:132(a)
+msgid "MiniTest"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:78(p)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:81(p)
+msgid ""
+"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>, <span "
+"class=\"object_link\"><placeholder-3/></span>"
+msgstr ""
+
+#: doc/reference/en/method_list.html:21(script)
+#: doc/reference/en/class_list.html:21(script)
+#: doc/reference/en/file_list.html:21(script)
+msgid ""
+"if (window.top.frames.main) { document.getElementById('base_target').target "
+"= 'main'; document.body.className = 'frames'; }"
+msgstr ""
+
+#: doc/reference/en/method_list.html:31(a)
+#: doc/reference/en/class_list.html:31(a)
+#: doc/reference/en/file_list.html:31(a)
+msgid "Classes"
+msgstr ""
+
+#: doc/reference/en/method_list.html:33(a)
+#: doc/reference/en/class_list.html:33(a)
+#: doc/reference/en/file_list.html:33(a)
+msgid "Methods"
+msgstr ""
+
+#: doc/reference/en/method_list.html:35(a)
+#: doc/reference/en/class_list.html:35(a)
+#: doc/reference/en/file_list.html:35(a)
+msgid "Files"
+msgstr ""
+
+#: doc/reference/en/method_list.html:38(div)
+#: doc/reference/en/class_list.html:38(div)
+#: doc/reference/en/file_list.html:38(div)
+msgid "Search: <input type=\"text\"/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:74(li)
+msgid "ActionDispatch::IntegrationTest"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:37(span)
+msgid "ActionDispatch"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(li)
+msgid ""
+"<span class=\"object_link\"><placeholder-1/></span> &lt; "
+"Object<placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/class_list.html:42(small)
+msgid "ActiveSupport::Testing::SetupAndTeardown"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(small)
+msgid "ActiveSupport::Testing"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:39(span)
+#: doc/reference/en/_index.html:87(a)
+msgid "ClassMethods"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:39(span)
+#: doc/reference/en/_index.html:102(a)
+msgid "ForClassicTestUnit"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(small)
+msgid "Test::Unit"
+msgstr ""
+
+#: doc/reference/en/Test.html:6(title)
+msgid "Module: Test &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/Test.html:36(a)
+msgid "Index (T)"
+msgstr ""
+
+#: doc/reference/en/Test.html:59(h1)
+msgid "Module: Test"
+msgstr ""
+
+#: doc/reference/en/Test.html:80(h2)
+msgid "Overview"
+msgstr ""
+
+#: doc/reference/en/Test.html:82(p)
+msgid "Copyright © 20121 Kouhei Sutou &lt;kou@clear-code.com&gt;"
+msgstr ""
+
+#: doc/reference/en/Test.html:84(span) doc/reference/en/Test.html:88(span)
+#: doc/reference/en/Test.html:90(span)
+msgid "GNU"
+msgstr ""
+
+#: doc/reference/en/Test.html:83(p)
+msgid ""
+"This library is free software; you can redistribute it and/or modify it "
+"under the terms of the <placeholder-1/> Lesser General Public License "
+"version 2.1 as published by the Free Software Foundation."
+msgstr ""
+
+#: doc/reference/en/Test.html:87(span)
+msgid "WITHOUT"
+msgstr ""
+
+#: doc/reference/en/Test.html:87(span)
+msgid "ANY"
+msgstr ""
+
+#: doc/reference/en/Test.html:87(span)
+msgid "WARRANTY"
+msgstr ""
+
+#: doc/reference/en/Test.html:88(span)
+msgid "MERCHANTABILITY"
+msgstr ""
+
+#: doc/reference/en/Test.html:88(span)
+msgid "FITNESS"
+msgstr ""
+
+#: doc/reference/en/Test.html:88(span)
+msgid "FOR"
+msgstr ""
+
+#: doc/reference/en/Test.html:88(span)
+msgid "PARTICULAR"
+msgstr ""
+
+#: doc/reference/en/Test.html:88(span)
+msgid "PURPOSE"
+msgstr ""
+
+#: doc/reference/en/Test.html:86(p)
+msgid ""
+"This library is distributed in the hope that it will be useful, but "
+"<placeholder-1/> <placeholder-2/> <placeholder-3/>; without even the implied "
+"warranty of <placeholder-4/> or <placeholder-5/> <placeholder-6/> A "
+"<placeholder-7/> <placeholder-8/>. See the <placeholder-9/> Lesser General "
+"Public License for more details."
+msgstr ""
+
+#: doc/reference/en/Test.html:92(span)
+msgid "USA"
+msgstr ""
+
+#: doc/reference/en/Test.html:90(p)
+msgid ""
+"You should have received a copy of the <placeholder-1/> Lesser General "
+"Public License along with this library; if not, write to the Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 "
+"<placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/index.html:6(title)
+#: doc/reference/en/file.README.html:6(title)
+msgid "File: README &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/index.html:37(span)
+#: doc/reference/en/file.README.html:37(span)
+msgid "File: README"
+msgstr ""
+
+#: doc/reference/en/index.html:57(h1) doc/reference/en/index.html:72(span)
+#: doc/reference/en/file.README.html:57(h1)
+#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
+#: doc/reference/en/_index.html:55(h1)
+msgid "test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/index.html:58(a) doc/reference/en/file.README.html:58(a)
+msgid "Web site"
+msgstr "Webサイト"
+
+#: doc/reference/en/index.html:59(h2) doc/reference/en/file.README.html:59(h2)
+msgid "Description"
+msgstr "説明"
+
+#: doc/reference/en/index.html:62(a) doc/reference/en/file.README.html:62(a)
+msgid "RR"
+msgstr ""
+
+#: doc/reference/en/index.html:63(a) doc/reference/en/file.README.html:63(a)
+msgid "Capybara"
+msgstr ""
+
+#: doc/reference/en/index.html:60(p) doc/reference/en/file.README.html:60(p)
+msgid ""
+"test-unit-rails is a Rails adapter for Test::Unit 2.×. You can use full "
+"Test::Unit 2.x features, <placeholder-1/> integration and <placeholder-2/> "
+"integration with test-unit-rails."
+msgstr ""
+"test-unit-railsはTest::Unit2.x用のRailsアダプターです。test-unit-railsを使う"
+"とTest::Unit 2.xのフル機能と<placeholder-1/>・<placeholder-2/>との連携機能を"
+"使うことができます。"
+
+#: doc/reference/en/index.html:65(p) doc/reference/en/file.README.html:65(p)
+msgid ""
+"Rails supports Test::Unit 1.x and MiniTest but doesn’t suppot Test::Unit 2."
+"×. Rails with Test::Unit 2.x works but is not fully worked."
+msgstr ""
+"RailsはTest::Unit 1.xとMiniTestをサポートしていますがTest::Unit 2.xはサポート"
+"していません。RailsとTest::Unit 2.xの組み合わせは動きますが、完全に動くという"
+"わけではありません。"
+
+#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
+msgid "Install"
+msgstr "インストール"
+
+#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
+msgid "You need to add the following codes to your Gemfile:"
+msgstr "以下のコードをGemfileに追加してください。"
+
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid "group"
+msgstr ""
+
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid ":development"
+msgstr ""
+
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid ","
+msgstr ""
+
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid ":test"
+msgstr ""
+
+#: doc/reference/en/index.html:71(span)
+#: doc/reference/en/file.README.html:71(span)
+msgid "do"
+msgstr ""
+
+#: doc/reference/en/index.html:72(span)
+#: doc/reference/en/file.README.html:72(span)
+msgid "gem"
+msgstr ""
+
+#: doc/reference/en/index.html:72(span) doc/reference/en/index.html:83(span)
+#: doc/reference/en/file.README.html:72(span)
+#: doc/reference/en/file.README.html:83(span)
+msgid "'"
+msgstr ""
+
+#: doc/reference/en/index.html:73(span)
+#: doc/reference/en/file.README.html:73(span)
+msgid "end"
+msgstr ""
+
+#: doc/reference/en/index.html:75(p) doc/reference/en/file.README.html:75(p)
+msgid "And you update bundled gems:"
+msgstr "バンドルするgemをアップデートします。"
+
+#: doc/reference/en/index.html:76(pre)
+#: doc/reference/en/file.README.html:76(pre)
+msgid "% bundle update"
+msgstr ""
+
+#: doc/reference/en/index.html:79(code)
+#: doc/reference/en/file.README.html:79(code)
+msgid "\"require 'rails/test_help'\""
+msgstr ""
+
+#: doc/reference/en/index.html:79(p) doc/reference/en/file.README.html:79(p)
+msgid ""
+"You replace <placeholder-1/> in your test/test_helper.rb with the following "
+"codes:"
+msgstr "test/test_helper.rb内の<placeholder-1/>を以下のコードで置き換えます。"
+
+#: doc/reference/en/index.html:82(span)
+#: doc/reference/en/file.README.html:82(span)
+msgid "# require 'rails/test_help'"
+msgstr ""
+
+#: doc/reference/en/index.html:83(span)
+#: doc/reference/en/file.README.html:83(span)
+msgid "require"
+msgstr ""
+
+#: doc/reference/en/index.html:83(span)
+#: doc/reference/en/file.README.html:83(span)
+msgid "test/unit/rails"
+msgstr ""
+
+#: doc/reference/en/index.html:85(p) doc/reference/en/file.README.html:85(p)
+msgid ""
+"Now you can use full test-unit 2.x features, RR integration and Capybara "
+"integration."
+msgstr "これでTest::Unit 2.xのフル機能とRR・Capybaraとの連携機能を使えます。"
+
+#: doc/reference/en/index.html:87(h2) doc/reference/en/file.README.html:87(h2)
+msgid "License"
+msgstr "ライセンス"
+
+#: doc/reference/en/index.html:88(p) doc/reference/en/file.README.html:88(p)
+msgid "LGPLv2.1 or later."
+msgstr "LGPLv2.1またはそれ以降のバージョン。"
+
+#: doc/reference/en/index.html:89(p) doc/reference/en/file.README.html:89(p)
+msgid ""
+"(Kouhei Sutou has a right to change the license including contributed "
+"patches.)"
+msgstr ""
+"（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
+"権利を持ちます。）"
+
+#: doc/reference/en/index.html:91(h2) doc/reference/en/file.README.html:91(h2)
+msgid "Authors"
+msgstr "作者"
+
+#: doc/reference/en/index.html:93(li) doc/reference/en/file.README.html:93(li)
+msgid "Kouhei Sutou"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:6(title)
+msgid "Module: MiniTest &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:36(a)
+msgid "Index (M)"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:59(h1)
+msgid "Module: MiniTest"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:75(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:75(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:75(dd)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:75(dd)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:94(dd)
+msgid "lib/test/unit/rails.rb"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:85(dt)
+msgid "Assertion ="
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:88(span)
+msgid "::"
+msgstr ""
+
+#: doc/reference/en/MiniTest.html:88(span)
+msgid "Assertions"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:6(title)
+msgid ""
+"Module: ActiveSupport::Testing::SetupAndTeardown &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:36(a)
+msgid "Index (S)"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
+msgid "ActiveSupport"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
+msgid "Testing"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:39(span)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(a)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(a)
+#: doc/reference/en/_index.html:160(a)
+msgid "SetupAndTeardown"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:59(h1)
+msgid "Module: ActiveSupport::Testing::SetupAndTeardown"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:6(title)
+msgid ""
+"Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods &mdash; test-"
+"unit-rails"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:17(script)
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:17(script)
+msgid "relpath = '../../..'; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:36(a)
+msgid "Index (C)"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:59(h1)
+msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:6(title)
+msgid ""
+"Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit &mdash; "
+"test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:36(a)
+msgid "Index (F)"
+msgstr ""
+
+#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:59(h1)
+msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit"
+msgstr ""
+
+#: doc/reference/en/file_list.html:43(a) doc/reference/en/_index.html:63(a)
+msgid "README"
+msgstr ""
+
+#: doc/reference/en/file_list.html:46(a) doc/reference/en/_index.html:66(a)
+msgid "news"
+msgstr ""
+
+#: doc/reference/en/_index.html:57(h1)
+msgid "Alphabetic Index"
+msgstr ""
+
+#: doc/reference/en/_index.html:59(h2)
+msgid "File Listing"
+msgstr ""
+
+#: doc/reference/en/_index.html:72(h2)
+msgid "Namespace Listing A-Z"
+msgstr ""
+
+#: doc/reference/en/_index.html:83(li)
+msgid "C"
+msgstr ""
+
+#: doc/reference/en/_index.html:89(small)
+#: doc/reference/en/_index.html:104(small)
+msgid "(ActiveSupport::Testing::SetupAndTeardown)"
+msgstr ""
+
+#: doc/reference/en/_index.html:98(li)
+msgid "F"
+msgstr ""
+
+#: doc/reference/en/_index.html:113(li)
+msgid "I"
+msgstr ""
+
+#: doc/reference/en/_index.html:117(a)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:39(span)
+msgid "IntegrationTest"
+msgstr ""
+
+#: doc/reference/en/_index.html:119(small)
+msgid "(ActionDispatch)"
+msgstr ""
+
+#: doc/reference/en/_index.html:128(li)
+msgid "M"
+msgstr ""
+
+#: doc/reference/en/_index.html:141(li)
+msgid "R"
+msgstr ""
+
+#: doc/reference/en/_index.html:147(small)
+msgid "(Test::Unit)"
+msgstr ""
+
+#: doc/reference/en/_index.html:156(li)
+msgid "S"
+msgstr ""
+
+#: doc/reference/en/_index.html:162(small)
+msgid "(ActiveSupport::Testing)"
+msgstr ""
+
+#: doc/reference/en/_index.html:171(li)
+msgid "T"
+msgstr ""
+
+#: doc/reference/en/_index.html:187(li)
+msgid "U"
+msgstr ""
+
+#: doc/reference/en/_index.html:193(small)
+msgid "(Test)"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:6(title)
+msgid "Class: ActionDispatch::IntegrationTest &mdash; test-unit-rails"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:36(a)
+msgid "Index (I)"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:59(h1)
+msgid "Class: ActionDispatch::IntegrationTest"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:67(dt)
+msgid "Inherits:"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:69(span)
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:72(li)
+msgid "Object"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:77(a)
+msgid "show all"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:86(dt)
+msgid "Includes:"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:87(dd)
+msgid "Capybara::DSL"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:0(None)
+msgid "translator-credits"
+msgstr ""
