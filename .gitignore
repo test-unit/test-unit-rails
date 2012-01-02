@@ -3,3 +3,4 @@
 /.yardoc/
 /doc/po/*.pot
 /doc/reference/
+/doc/html/test-unit-rails/
