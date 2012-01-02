@@ -69,3 +69,8 @@ end
 
 Packnga::ReleaseTask.new(spec) do |task|
 end
+
+desc "Tag the current revision."
+task :tag do
+  sh("git tag -a #{version} -m 'release #{version}!!!'")
+end
