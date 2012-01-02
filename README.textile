@@ -4,15 +4,9 @@ h1. test-unit-rails
 
 h2. Description
 
-test-unit-rails is a Rails adapter for Test::Unit 2.x. You
-can use full Test::Unit 2.x features,
-"RR":https://rubygems.org/gems/rr integration and
-"Capybara":https://rubygems.org/gems/capybara integration
-with test-unit-rails.
+test-unit-rails is a Rails adapter for Test::Unit 2.x. You can use full Test::Unit 2.x features, "RR":https://rubygems.org/gems/rr integration and "Capybara":https://rubygems.org/gems/capybara integration with test-unit-rails.
 
-Rails supports Test::Unit 1.x and MiniTest but doesn't
-suppot Test::Unit 2.x. Rails with Test::Unit 2.x works but
-is not fully worked.
+Rails supports Test::Unit 1.x and MiniTest but doesn't suppot Test::Unit 2.x. Rails with Test::Unit 2.x works but is not fully worked.
 
 h2. Install
 
@@ -30,23 +24,20 @@ And you update bundled gems:
 % bundle update
 </pre>
 
-You replace @"require 'rails/test_help'"@ in your test/test_helper.rb with
-the following codes:
+You replace @"require 'rails/test_help'"@ in your test/test_helper.rb with the following codes:
 
 <pre>
 # require 'rails/test_help'
 require 'test/unit/rails'
 </pre>
 
-Now you can use full test-unit 2.x features, RR integration
-and Capybara integration.
+Now you can use full test-unit 2.x features, RR integration and Capybara integration.
 
 h2. License
 
 LGPLv2.1 or later.
 
-(Kouhei Sutou has a right to change the license including
-contributed patches.)
+(Kouhei Sutou has a right to change the license including contributed patches.)
 
 h2. Authors
 
