@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: test-unit-rails 1.0.0\n"
 "POT-Creation-Date: 2012-01-02 22:43+0900\n"
-"PO-Revision-Date: 2012-01-02 22:44+0900\n"
+"PO-Revision-Date: 2012-01-03 14:30+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -481,7 +481,7 @@ msgstr "test-unit-railsはtest-unit 2用のRailsアダプターです。test-uni
 #: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
 msgid ""
 "Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn’t "
-"suppot test-unit 2. Rails with test-unit 2 works but is not fully worked."
+"support test-unit 2. Rails with test-unit 2 works but is not fully worked."
 msgstr "RailsはRuby 1.8に同梱されているTest::UnitとMiniTestをサポートしていますがtest-unit 2はサポートしていません。Railsとtest-unit 2の組み合わせは動きますが、完全に動くというわけではありません。"
 
 #: doc/reference/en/index.html:62(h2) doc/reference/en/file.README.html:62(h2)
