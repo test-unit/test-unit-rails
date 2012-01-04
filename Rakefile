@@ -18,7 +18,7 @@
 
 require 'pathname'
 
-require './lib/test/unit/rails/version.rb'
+require './lib/test/unit/rails/version'
 
 require 'rubygems'
 require 'rubygems/package_task'
