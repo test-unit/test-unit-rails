@@ -38,7 +38,7 @@ Jeweler::Tasks.new do |_spec|
   spec.name = "test-unit-rails"
   spec.version = version
   spec.rubyforge_project = "test-unit"
-  spec.homepage = "http://test-unit.rubyforge.org/"
+  spec.homepage = "http://test-unit.rubyforge.org/#test-unit-rails"
   spec.authors = ["Kouhei Sutou"]
   spec.email = ["kou@clear-code.com"]
   entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
