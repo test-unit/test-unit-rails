@@ -47,7 +47,8 @@ Jeweler::Tasks.new do |_spec|
   spec.license = "LGPLv2 or later"
   spec.files = FileList["{lib,benchmark,misc}/**/*.rb",
                         "bin/*",
-                        "README",
+                        "doc/text/*",
+                        "README.textile",
                         "COPYING",
                         "Rakefile",
                         "Gemfile"]
