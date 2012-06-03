@@ -22,7 +22,7 @@ clean_white_space = lambda do |entry|
   entry.gsub(/(\A\n+|\n+\z)/, "") + "\n"
 end
 
-ENV["VERSION"] ||= Test::Unit::ActiveSupport::VERSION
+ENV["VERSION"] ||= Test::Unit::Rails::VERSION
 version = ENV["VERSION"].dup
 
 Gem::Specification.new do |spec|
