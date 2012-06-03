@@ -24,6 +24,8 @@ require 'yard'
 require 'bundler/gem_helper'
 require 'packnga'
 
+base_dir = File.join(File.dirname(__FILE__))
+
 class Bundler::GemHelper
   def version_tag
     "#{version}"
