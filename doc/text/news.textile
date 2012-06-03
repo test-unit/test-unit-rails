@@ -1,5 +1,12 @@
 h1. News
 
+h2(#1-0-1). 1.0.1 - 2012-06-03
+
+h3. Improvements
+
+  * Extracted ActiveSupport related codes into test-unit-activesupport
+    gem and depended on it.
+
 h2(#1-0-0). 1.0.0 - 2012-1-2
 
 The first release!!!
