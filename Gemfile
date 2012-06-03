@@ -16,15 +16,6 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-gem "rails"
-gem "test-unit"
-gem "test-unit-notify"
-gem "test-unit-capybara"
-gem "test-unit-rr"
+source :rubygems
 
-group :development do
-  gem "rake"
-  gem "jeweler"
-  gem "yard"
-  gem "packnga"
-end
+gemspec
