@@ -18,30 +18,10 @@
 
 require "test/unit/rails/version"
 
-require "test/unit"
+require "test/unit/active_support"
 require "test/unit/notify"
 require "test/unit/rr"
 require "test/unit/capybara"
-
-require "active_support/testing/setup_and_teardown"
-module ActiveSupport::Testing::SetupAndTeardown
-  module ClassMethods
-    remove_method :setup
-    remove_method :teardown
-  end
-
-  if const_defined?(:ForClassicTestUnit)
-    module ForClassicTestUnit
-      remove_method :run
-    end
-  end
-end
-
-unless ActiveSupport::Testing::SetupAndTeardown.const_defined?(:ForClassicTestUnit)
-  module MiniTest
-    Assertion = Test::Unit::Assertions
-  end
-end
 
 require "rails/test_help"
 
