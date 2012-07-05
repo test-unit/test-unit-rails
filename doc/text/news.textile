@@ -1,5 +1,16 @@
 h1. News
 
+h2(#1-0-2). 1.0.2 - 2012-07-05
+
+h3. Improvements
+
+  * Supported Bundler 1.2.0.pre.1.
+    [GitHub#1] [Reported by Michael D.W. Prendergast]
+
+h3. Thanks
+
+  * Michael D.W. Prendergast
+
 h2(#1-0-1). 1.0.1 - 2012-06-03
 
 h3. Improvements
