@@ -28,7 +28,7 @@ You replace @"require 'rails/test_help'"@ in your test/test_helper.rb with the f
 
 <pre>
 # require 'rails/test_help'
-require 'test/unit/rails'
+require 'test/unit/rails/test_help'
 </pre>
 
 Now you can use full test-unit 2.x features, RR integration and Capybara integration.
