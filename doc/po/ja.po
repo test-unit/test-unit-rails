@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: test-unit-rails 1.0.0\n"
-"POT-Creation-Date: 2012-07-05 22:13+0900\n"
+"POT-Creation-Date: 2012-07-05 22:14+0900\n"
 "PO-Revision-Date: 2012-07-05 22:14+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
@@ -246,7 +246,8 @@ msgstr "改良"
 msgid ""
 "Supported Bundler 1.2.0.pre.1. [GitHub#1] [Reported by Michael D.W. "
 "Prendergast]"
-msgstr "Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさんが報告]"
+msgstr ""
+"Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさんが報告]"
 
 #: doc/reference/en/file.news.html:71(h3)
 msgid "Thanks"
@@ -483,7 +484,6 @@ msgid "Install"
 msgstr "インストール"
 
 #: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
-#, fuzzy
 msgid "Add the following codes to your Gemfile:"
 msgstr "以下のコードをGemfileに追加してください。"
 
@@ -529,7 +529,6 @@ msgid "end"
 msgstr ""
 
 #: doc/reference/en/index.html:76(p) doc/reference/en/file.README.html:76(p)
-#, fuzzy
 msgid "Update bundled gems:"
 msgstr "バンドルするgemをアップデートします。"
 
@@ -544,7 +543,6 @@ msgid "\"require 'rails/test_help'\""
 msgstr ""
 
 #: doc/reference/en/index.html:80(p) doc/reference/en/file.README.html:80(p)
-#, fuzzy
 msgid ""
 "Replace <placeholder-1/> in your test/test_helper.rb with the following "
 "codes:"
