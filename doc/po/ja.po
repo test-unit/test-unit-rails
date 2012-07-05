@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: test-unit-rails 1.0.0\n"
-"POT-Creation-Date: 2012-06-03 22:04+0900\n"
-"PO-Revision-Date: 2012-06-03 22:06+0900\n"
+"POT-Creation-Date: 2012-07-05 22:13+0900\n"
+"PO-Revision-Date: 2012-07-05 22:14+0900\n"
 "Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -168,7 +168,7 @@ msgid "\""
 msgstr ""
 
 #: doc/reference/en/Test/Unit/Rails.html:95(span)
-msgid "1.0.1"
+msgid "1.0.2"
 msgstr ""
 
 #: doc/reference/en/Test/Unit.html:6(title)
@@ -234,24 +234,45 @@ msgid "News"
 msgstr "お知らせ"
 
 #: doc/reference/en/file.news.html:65(h2)
-msgid "1.0.1 – 2012-06-03"
+msgid "1.0.2 – 2012-07-05"
 msgstr ""
 
 #: doc/reference/en/file.news.html:66(h3)
+#: doc/reference/en/file.news.html:76(h3)
 msgid "Improvements"
 msgstr "改良"
 
 #: doc/reference/en/file.news.html:68(li)
 msgid ""
+"Supported Bundler 1.2.0.pre.1. [GitHub#1] [Reported by Michael D.W. "
+"Prendergast]"
+msgstr "Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさんが報告]"
+
+#: doc/reference/en/file.news.html:71(h3)
+msgid "Thanks"
+msgstr "感謝"
+
+#: doc/reference/en/file.news.html:73(li)
+msgid "Michael D.W. Prendergast"
+msgstr "Michael D.W. Prendergastさん"
+
+#: doc/reference/en/file.news.html:75(h2)
+msgid "1.0.1 – 2012-06-03"
+msgstr ""
+
+#: doc/reference/en/file.news.html:78(li)
+msgid ""
 "Extracted ActiveSupport related codes into test-unit-activesupport gem and "
 "depended on it."
-msgstr "ActiveSupport関連のコードをtest-unit-activesupport gemに抽出してそのgemを使うようにした。"
+msgstr ""
+"ActiveSupport関連のコードをtest-unit-activesupport gemに抽出してそのgemを使う"
+"ようにした。"
 
-#: doc/reference/en/file.news.html:71(h2)
+#: doc/reference/en/file.news.html:81(h2)
 msgid "1.0.0 – 2012-1-2"
 msgstr ""
 
-#: doc/reference/en/file.news.html:72(p)
+#: doc/reference/en/file.news.html:82(p)
 msgid "The first release!!!"
 msgstr "最初のリリース！"
 
@@ -462,7 +483,8 @@ msgid "Install"
 msgstr "インストール"
 
 #: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
-msgid "You add the following codes to your Gemfile:"
+#, fuzzy
+msgid "Add the following codes to your Gemfile:"
 msgstr "以下のコードをGemfileに追加してください。"
 
 #: doc/reference/en/index.html:72(span)
@@ -507,7 +529,8 @@ msgid "end"
 msgstr ""
 
 #: doc/reference/en/index.html:76(p) doc/reference/en/file.README.html:76(p)
-msgid "And you update bundled gems:"
+#, fuzzy
+msgid "Update bundled gems:"
 msgstr "バンドルするgemをアップデートします。"
 
 #: doc/reference/en/index.html:77(code)
@@ -521,8 +544,9 @@ msgid "\"require 'rails/test_help'\""
 msgstr ""
 
 #: doc/reference/en/index.html:80(p) doc/reference/en/file.README.html:80(p)
+#, fuzzy
 msgid ""
-"You replace <placeholder-1/> in your test/test_helper.rb with the following "
+"Replace <placeholder-1/> in your test/test_helper.rb with the following "
 "codes:"
 msgstr "test/test_helper.rb内の<placeholder-1/>を以下のコードで置き換えます。"
 
@@ -538,7 +562,7 @@ msgstr ""
 
 #: doc/reference/en/index.html:83(span)
 #: doc/reference/en/file.README.html:83(span)
-msgid "test/unit/rails"
+msgid "test/unit/rails/test_help"
 msgstr ""
 
 #: doc/reference/en/index.html:85(p) doc/reference/en/file.README.html:85(p)
@@ -602,7 +626,6 @@ msgstr ""
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:75(dd)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:75(dd)
 #: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:75(dd)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:101(dd)
 msgid "lib/test/unit/rails.rb"
 msgstr ""
 
@@ -799,6 +822,10 @@ msgstr ""
 
 #: doc/reference/en/ActionDispatch/IntegrationTest.html:94(dd)
 msgid "Capybara::DSL"
+msgstr ""
+
+#: doc/reference/en/ActionDispatch/IntegrationTest.html:101(dd)
+msgid "lib/test/unit/rails/test_help.rb"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
