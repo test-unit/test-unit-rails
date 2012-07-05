@@ -10,7 +10,7 @@ Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't support t
 
 h2. Install
 
-You add the following codes to your Gemfile:
+Add the following codes to your Gemfile:
 
 <pre>
 group :development, :test do
@@ -18,13 +18,13 @@ group :development, :test do
 end
 </pre>
 
-And you update bundled gems:
+Update bundled gems:
 
 <pre>
 % bundle update
 </pre>
 
-You replace @"require 'rails/test_help'"@ in your test/test_helper.rb with the following codes:
+Replace @"require 'rails/test_help'"@ in your test/test_helper.rb with the following codes:
 
 <pre>
 # require 'rails/test_help'
