@@ -28,10 +28,9 @@ version = ENV["VERSION"].dup
 Gem::Specification.new do |spec|
   spec.name = "test-unit-rails"
   spec.version = version
-  spec.rubyforge_project = "test-unit"
   spec.authors = ["Kouhei Sutou"]
   spec.email = ["kou@clear-code.com"]
-  spec.homepage = "http://test-unit.rubyforge.org/#test-unit-rails"
+  spec.homepage = "https://github.com/test-unit/test-unit-rails"
   entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
   description = clean_white_space.call(entries[entries.index("Description") + 1])
   spec.summary, spec.description, = description.split(/\n\n+/, 3)
