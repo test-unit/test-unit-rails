@@ -1,13 +1,14 @@
-# ja.po for test-unit-rails Reference.
-# Copyright (C) 2012 Kouhei Sutou
-# This file is distributed under the same license as the test-unit-rails package.
-# Kouhei Sutou <kou@clear-code.com>, 2012.
+# Japanese translations for PACKAGE package.
+# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: test-unit-rails 1.0.0\n"
-"POT-Creation-Date: 2012-07-05 22:14+0900\n"
-"PO-Revision-Date: 2012-07-05 22:14+0900\n"
-"Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2014-09-04 00:37+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,818 +16,154 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: doc/reference/en/Test/Unit/Rails.html:6(title)
-msgid "Module: Test::Unit::Rails &mdash; test-unit-rails"
+msgid "h1. test-unit-rails"
 msgstr ""
 
-#: doc/reference/en/Test/Unit/Rails.html:17(script)
+msgid "\"Web site\":http://test-unit.github.io/#test-unit-rails"
+msgstr ""
+
+msgid "h2. Description"
+msgstr ""
+
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = '../../'; "
-"framesUrl = \"../../frames.html#!\" + escape(window.location.href);"
+"test-unit-rails is a Rails adapter for test-unit 3. You can use full test-unit"
+" 3 features, \"RR\":https://rubygems.org/gems/rr integration and \"Capybara\":http"
+"s://rubygems.org/gems/capybara integration with test-unit-rails."
 msgstr ""
 
-#: doc/reference/en/Test/Unit/Rails.html:34(a)
-msgid "Index (R)"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:35(a)
-#: doc/reference/en/Test/Unit.html:35(a)
-#: doc/reference/en/top-level-namespace.html:88(a)
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/class_list.html:48(small)
-#: doc/reference/en/Test.html:37(span) doc/reference/en/MiniTest.html:88(span)
-#: doc/reference/en/_index.html:121(a)
-msgid "Test"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:35(a)
-#: doc/reference/en/Test/Unit.html:37(span)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/Test.html:111(a)
-#: doc/reference/en/MiniTest.html:88(span) doc/reference/en/_index.html:134(a)
-msgid "Unit"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:37(span)
-#: doc/reference/en/Test/Unit.html:91(a)
-#: doc/reference/en/class_list.html:48(a) doc/reference/en/_index.html:106(a)
-msgid "Rails"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:40(span)
-#: doc/reference/en/Test/Unit.html:40(span)
-#: doc/reference/en/file.news.html:38(span)
-#: doc/reference/en/top-level-namespace.html:40(span)
-#: doc/reference/en/Test.html:40(span) doc/reference/en/index.html:38(span)
-#: doc/reference/en/MiniTest.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(span)
-#: doc/reference/en/file.README.html:38(span)
-#: doc/reference/en/_index.html:33(span)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:40(span)
-msgid "("
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:40(a)
-#: doc/reference/en/Test/Unit.html:40(a) doc/reference/en/file.news.html:38(a)
-#: doc/reference/en/top-level-namespace.html:40(a)
-#: doc/reference/en/Test.html:40(a) doc/reference/en/index.html:38(a)
-#: doc/reference/en/MiniTest.html:42(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(a)
-#: doc/reference/en/file.README.html:38(a) doc/reference/en/_index.html:33(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:40(a)
-msgid "no frames"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:40(span)
-#: doc/reference/en/Test/Unit.html:40(span)
-#: doc/reference/en/file.news.html:38(span)
-#: doc/reference/en/top-level-namespace.html:40(span)
-#: doc/reference/en/Test.html:40(span) doc/reference/en/index.html:38(span)
-#: doc/reference/en/MiniTest.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:42(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:42(span)
-#: doc/reference/en/file.README.html:38(span)
-#: doc/reference/en/_index.html:33(span)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:40(span)
-msgid ")"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:46(a)
-#: doc/reference/en/Test/Unit.html:46(a) doc/reference/en/file.news.html:44(a)
-#: doc/reference/en/top-level-namespace.html:46(a)
-#: doc/reference/en/class_list.html:28(h1) doc/reference/en/Test.html:46(a)
-#: doc/reference/en/index.html:44(a) doc/reference/en/MiniTest.html:47(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:47(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:47(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:47(a)
-#: doc/reference/en/file.README.html:44(a) doc/reference/en/_index.html:39(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:46(a)
-msgid "Class List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:51(a)
-#: doc/reference/en/Test/Unit.html:51(a) doc/reference/en/file.news.html:49(a)
-#: doc/reference/en/top-level-namespace.html:51(a)
-#: doc/reference/en/method_list.html:28(h1) doc/reference/en/Test.html:51(a)
-#: doc/reference/en/index.html:49(a) doc/reference/en/MiniTest.html:49(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:49(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:49(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:49(a)
-#: doc/reference/en/file.README.html:49(a) doc/reference/en/_index.html:44(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:51(a)
-msgid "Method List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:56(a)
-#: doc/reference/en/Test/Unit.html:56(a) doc/reference/en/file.news.html:54(a)
-#: doc/reference/en/top-level-namespace.html:56(a)
-#: doc/reference/en/Test.html:56(a) doc/reference/en/index.html:54(a)
-#: doc/reference/en/MiniTest.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:51(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:51(a)
-#: doc/reference/en/file.README.html:54(a)
-#: doc/reference/en/file_list.html:28(h1) doc/reference/en/_index.html:49(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:56(a)
-msgid "File List"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:66(h1)
-msgid "Module: Test::Unit::Rails"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:81(dt)
-#: doc/reference/en/Test/Unit.html:81(dt) doc/reference/en/Test.html:81(dt)
-#: doc/reference/en/MiniTest.html:74(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:74(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:74(dt)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:74(dt)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:100(dt)
-msgid "Defined in:"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:82(dd)
-#: doc/reference/en/Test/Unit.html:82(dd) doc/reference/en/Test.html:82(dd)
-msgid "lib/test/unit/rails/version.rb"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:88(h2)
-#: doc/reference/en/MiniTest.html:81(h2)
-msgid "Constant Summary"
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:92(dt)
-msgid "VERSION ="
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:95(span)
-msgid "\""
-msgstr ""
-
-#: doc/reference/en/Test/Unit/Rails.html:95(span)
-msgid "1.0.2"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:6(title)
-msgid "Module: Test::Unit &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:17(script)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:17(script)
 msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = '../'; "
-"framesUrl = \"../frames.html#!\" + escape(window.location.href);"
+"Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't support"
+" test-unit 2. Rails with test-unit 2 works but is not fully worked."
 msgstr ""
 
-#: doc/reference/en/Test/Unit.html:34(a)
-msgid "Index (U)"
+msgid "h2. Install"
 msgstr ""
 
-#: doc/reference/en/Test/Unit.html:66(h1)
-msgid "Module: Test::Unit"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:87(h2)
-#: doc/reference/en/top-level-namespace.html:84(h2)
-#: doc/reference/en/Test.html:107(h2)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:80(h2)
-msgid "Defined Under Namespace"
-msgstr ""
-
-#: doc/reference/en/Test/Unit.html:91(strong)
-#: doc/reference/en/top-level-namespace.html:88(strong)
-#: doc/reference/en/Test.html:111(strong)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(strong)
-msgid "Modules:"
-msgstr ""
-
-#: doc/reference/en/file.news.html:6(title)
-msgid "File: news &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/file.news.html:17(script)
-#: doc/reference/en/top-level-namespace.html:17(script)
-#: doc/reference/en/Test.html:17(script)
-#: doc/reference/en/index.html:17(script)
-#: doc/reference/en/file.README.html:17(script)
-#: doc/reference/en/_index.html:15(script)
-msgid ""
-"hasFrames = window.top.frames.main ? true : false; relpath = ''; framesUrl = "
-"\"frames.html#!\" + escape(window.location.href);"
-msgstr ""
-
-#: doc/reference/en/file.news.html:34(a)
-#: doc/reference/en/top-level-namespace.html:34(a)
-#: doc/reference/en/index.html:34(a) doc/reference/en/file.README.html:34(a)
-msgid "Index"
-msgstr ""
-
-#: doc/reference/en/file.news.html:35(span)
-msgid "File: news"
-msgstr ""
-
-#: doc/reference/en/file.news.html:64(h1)
-msgid "News"
-msgstr "お知らせ"
-
-#: doc/reference/en/file.news.html:65(h2)
-msgid "1.0.2 – 2012-07-05"
-msgstr ""
-
-#: doc/reference/en/file.news.html:66(h3)
-#: doc/reference/en/file.news.html:76(h3)
-msgid "Improvements"
-msgstr "改良"
-
-#: doc/reference/en/file.news.html:68(li)
-msgid ""
-"Supported Bundler 1.2.0.pre.1. [GitHub#1] [Reported by Michael D.W. "
-"Prendergast]"
-msgstr ""
-"Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさんが報告]"
-
-#: doc/reference/en/file.news.html:71(h3)
-msgid "Thanks"
-msgstr "感謝"
-
-#: doc/reference/en/file.news.html:73(li)
-msgid "Michael D.W. Prendergast"
-msgstr "Michael D.W. Prendergastさん"
-
-#: doc/reference/en/file.news.html:75(h2)
-msgid "1.0.1 – 2012-06-03"
-msgstr ""
-
-#: doc/reference/en/file.news.html:78(li)
-msgid ""
-"Extracted ActiveSupport related codes into test-unit-activesupport gem and "
-"depended on it."
-msgstr ""
-"ActiveSupport関連のコードをtest-unit-activesupport gemに抽出してそのgemを使う"
-"ようにした。"
-
-#: doc/reference/en/file.news.html:81(h2)
-msgid "1.0.0 – 2012-1-2"
-msgstr ""
-
-#: doc/reference/en/file.news.html:82(p)
-msgid "The first release!!!"
-msgstr "最初のリリース！"
-
-#: doc/reference/en/top-level-namespace.html:6(title)
-msgid "Top Level Namespace &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:37(span)
-#: doc/reference/en/top-level-namespace.html:66(h1)
-#: doc/reference/en/class_list.html:47(a)
-#: doc/reference/en/class_list.html:48(small)
-msgid "Top Level Namespace"
-msgstr ""
-
-#: doc/reference/en/method_list.html:21(script)
-#: doc/reference/en/class_list.html:21(script)
-#: doc/reference/en/file_list.html:21(script)
-msgid ""
-"if (window.top.frames.main) { document.getElementById('base_target').target "
-"= 'main'; document.body.className = 'frames'; }"
-msgstr ""
-
-#: doc/reference/en/method_list.html:31(a)
-#: doc/reference/en/class_list.html:31(a)
-#: doc/reference/en/file_list.html:31(a)
-msgid "Classes"
-msgstr ""
-
-#: doc/reference/en/method_list.html:35(a)
-#: doc/reference/en/class_list.html:35(a)
-#: doc/reference/en/file_list.html:35(a)
-msgid "Methods"
-msgstr ""
-
-#: doc/reference/en/method_list.html:39(a)
-#: doc/reference/en/class_list.html:39(a)
-#: doc/reference/en/file_list.html:39(a)
-msgid "Files"
-msgstr ""
-
-#: doc/reference/en/method_list.html:44(div)
-#: doc/reference/en/class_list.html:44(div)
-#: doc/reference/en/file_list.html:44(div)
-msgid "Search: <input type=\"text\"/>"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:81(li)
-msgid "ActionDispatch::IntegrationTest"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(small)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:35(span)
-msgid "ActionDispatch"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(li)
-msgid ""
-"<span class=\"object_link\"><placeholder-1/></span> &lt; "
-"Object<placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/class_list.html:48(small)
-msgid "Test::Unit"
-msgstr ""
-
-#: doc/reference/en/Test.html:6(title)
-msgid "Module: Test &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/Test.html:34(a)
-msgid "Index (T)"
-msgstr ""
-
-#: doc/reference/en/Test.html:66(h1)
-msgid "Module: Test"
-msgstr ""
-
-#: doc/reference/en/Test.html:87(h2)
-msgid "Overview"
-msgstr ""
-
-#: doc/reference/en/Test.html:89(p)
-msgid "Copyright © 2012 Kouhei Sutou &lt;kou@clear-code.com&gt;"
-msgstr ""
-
-#: doc/reference/en/Test.html:91(span) doc/reference/en/Test.html:96(span)
-#: doc/reference/en/Test.html:98(span)
-msgid "GNU"
-msgstr ""
-
-#: doc/reference/en/Test.html:90(p)
-msgid ""
-"This library is free software; you can redistribute it and/or modify it "
-"under the terms of the <placeholder-1/> Lesser General Public License as "
-"published by the Free Software Foundation; either version 2.1 of the "
-"License, or (at your option) any later version."
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "WITHOUT"
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "ANY"
-msgstr ""
-
-#: doc/reference/en/Test.html:95(span)
-msgid "WARRANTY"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "MERCHANTABILITY"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "FITNESS"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "FOR"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "PARTICULAR"
-msgstr ""
-
-#: doc/reference/en/Test.html:96(span)
-msgid "PURPOSE"
-msgstr ""
-
-#: doc/reference/en/Test.html:94(p)
-msgid ""
-"This library is distributed in the hope that it will be useful, but "
-"<placeholder-1/> <placeholder-2/> <placeholder-3/>; without even the implied "
-"warranty of <placeholder-4/> or <placeholder-5/> <placeholder-6/> A "
-"<placeholder-7/> <placeholder-8/>. See the <placeholder-9/> Lesser General "
-"Public License for more details."
-msgstr ""
-
-#: doc/reference/en/Test.html:100(span)
-msgid "USA"
-msgstr ""
-
-#: doc/reference/en/Test.html:98(p)
-msgid ""
-"You should have received a copy of the <placeholder-1/> Lesser General "
-"Public License along with this library; if not, write to the Free Software "
-"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 "
-"<placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/index.html:6(title)
-#: doc/reference/en/file.README.html:6(title)
-msgid "File: README &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/index.html:35(span)
-#: doc/reference/en/file.README.html:35(span)
-msgid "File: README"
-msgstr ""
-
-#: doc/reference/en/index.html:64(h1) doc/reference/en/index.html:73(span)
-#: doc/reference/en/file.README.html:64(h1)
-#: doc/reference/en/file.README.html:73(span)
-#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
-#: doc/reference/en/_index.html:59(h1)
-msgid "test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/index.html:65(a) doc/reference/en/file.README.html:65(a)
-msgid "Web site"
-msgstr "Webサイト"
-
-#: doc/reference/en/index.html:66(h2) doc/reference/en/file.README.html:66(h2)
-msgid "Description"
-msgstr "説明"
-
-#: doc/reference/en/index.html:67(a) doc/reference/en/file.README.html:67(a)
-msgid "RR"
-msgstr ""
-
-#: doc/reference/en/index.html:67(a) doc/reference/en/file.README.html:67(a)
-msgid "Capybara"
-msgstr ""
-
-#: doc/reference/en/index.html:67(p) doc/reference/en/file.README.html:67(p)
-msgid ""
-"test-unit-rails is a Rails adapter for test-unit 2. You can use full test-"
-"unit 2 features, <placeholder-1/> integration and <placeholder-2/> "
-"integration with test-unit-rails."
-msgstr ""
-"test-unit-railsはtest-unit 2用のRailsアダプターです。test-unit-railsを使うと"
-"test-unit 2のフル機能と<placeholder-1/>・<placeholder-2/>との連携機能を使うこ"
-"とができます。"
-
-#: doc/reference/en/index.html:68(p) doc/reference/en/file.README.html:68(p)
-msgid ""
-"Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn’t "
-"support test-unit 2. Rails with test-unit 2 works but is not fully worked."
-msgstr ""
-"RailsはRuby 1.8に同梱されているTest::UnitとMiniTestをサポートしていますが"
-"test-unit 2はサポートしていません。Railsとtest-unit 2の組み合わせは動きます"
-"が、完全に動くというわけではありません。"
-
-#: doc/reference/en/index.html:69(h2) doc/reference/en/file.README.html:69(h2)
-msgid "Install"
-msgstr "インストール"
-
-#: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
 msgid "Add the following codes to your Gemfile:"
-msgstr "以下のコードをGemfileに追加してください。"
-
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid "group"
 msgstr ""
 
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid ":development"
+msgid ""
+"<pre>\n"
+"group :development, :test do\n"
+"  gem 'test-unit-rails'\n"
+"end\n"
+"</pre>"
 msgstr ""
 
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid ","
-msgstr ""
-
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid ":test"
-msgstr ""
-
-#: doc/reference/en/index.html:72(span)
-#: doc/reference/en/file.README.html:72(span)
-msgid "do"
-msgstr ""
-
-#: doc/reference/en/index.html:73(span)
-#: doc/reference/en/file.README.html:73(span)
-msgid "gem"
-msgstr ""
-
-#: doc/reference/en/index.html:73(span) doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:73(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "'"
-msgstr ""
-
-#: doc/reference/en/index.html:74(span)
-#: doc/reference/en/file.README.html:74(span)
-msgid "end"
-msgstr ""
-
-#: doc/reference/en/index.html:76(p) doc/reference/en/file.README.html:76(p)
 msgid "Update bundled gems:"
-msgstr "バンドルするgemをアップデートします。"
-
-#: doc/reference/en/index.html:77(code)
-#: doc/reference/en/file.README.html:77(code)
-msgid "% bundle update"
 msgstr ""
 
-#: doc/reference/en/index.html:80(code)
-#: doc/reference/en/file.README.html:80(code)
-msgid "\"require 'rails/test_help'\""
-msgstr ""
-
-#: doc/reference/en/index.html:80(p) doc/reference/en/file.README.html:80(p)
 msgid ""
-"Replace <placeholder-1/> in your test/test_helper.rb with the following "
-"codes:"
-msgstr "test/test_helper.rb内の<placeholder-1/>を以下のコードで置き換えます。"
-
-#: doc/reference/en/index.html:82(span)
-#: doc/reference/en/file.README.html:82(span)
-msgid "# require 'rails/test_help'"
+"<pre>\n"
+"% bundle update\n"
+"</pre>"
 msgstr ""
 
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "require"
-msgstr ""
-
-#: doc/reference/en/index.html:83(span)
-#: doc/reference/en/file.README.html:83(span)
-msgid "test/unit/rails/test_help"
-msgstr ""
-
-#: doc/reference/en/index.html:85(p) doc/reference/en/file.README.html:85(p)
 msgid ""
-"Now you can use full test-unit 2.x features, RR integration and Capybara "
-"integration."
-msgstr "これでTest::Unit 2.xのフル機能とRR・Capybaraとの連携機能を使えます。"
+"Replace @\"require 'rails/test_help'\"@ in your test/test_helper.rb with the fol"
+"lowing codes:"
+msgstr ""
 
-#: doc/reference/en/index.html:86(h2) doc/reference/en/file.README.html:86(h2)
-msgid "License"
-msgstr "ライセンス"
+msgid ""
+"<pre>\n"
+"# require 'rails/test_help'\n"
+"require 'test/unit/rails/test_help'\n"
+"</pre>"
+msgstr ""
 
-#: doc/reference/en/index.html:87(p) doc/reference/en/file.README.html:87(p)
+msgid ""
+"Now you can use full test-unit 3.x features, RR integration and Capybara integ"
+"ration."
+msgstr ""
+
+msgid "h2. License"
+msgstr ""
+
 msgid "LGPLv2.1 or later."
-msgstr "LGPLv2.1またはそれ以降のバージョン。"
+msgstr ""
 
-#: doc/reference/en/index.html:88(p) doc/reference/en/file.README.html:88(p)
 msgid ""
-"(Kouhei Sutou has a right to change the license including contributed "
-"patches.)"
-msgstr ""
-"（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
-"権利を持ちます。）"
-
-#: doc/reference/en/index.html:89(h2) doc/reference/en/file.README.html:89(h2)
-msgid "Authors"
-msgstr "作者"
-
-#: doc/reference/en/index.html:91(li) doc/reference/en/file.README.html:91(li)
-msgid "Kouhei Sutou"
+"(Kouhei Sutou has a right to change the license including contributed patches."
+")"
 msgstr ""
 
-#: doc/reference/en/MiniTest.html:6(title)
-msgid "Module: MiniTest &mdash; test-unit-rails"
+msgid "h2. Authors"
 msgstr ""
 
-#: doc/reference/en/MiniTest.html:17(script)
-msgid "relpath = ''; if (relpath != '') relpath += '/';"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:29(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:29(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:29(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:29(script)
-msgid "if (window.top.frames.main) document.body.className = 'frames';"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:36(a)
-msgid "Index (M)"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:39(span)
-msgid "MiniTest"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:59(h1)
-msgid "Module: MiniTest"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:75(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:75(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:75(dd)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:75(dd)
-msgid "lib/test/unit/rails.rb"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:85(dt)
-msgid "Assertion ="
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:88(span)
-msgid "::"
-msgstr ""
-
-#: doc/reference/en/MiniTest.html:88(span)
-msgid "Assertions"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:6(title)
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown &mdash; test-unit-rails"
+"* Kouhei Sutou\n"
+"* Haruka Yoshihara"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:17(script)
-msgid "relpath = '../..'; if (relpath != '') relpath += '/';"
+msgid "h1. News"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:36(a)
-msgid "Index (S)"
+msgid "h2(#1-0-3). 1.0.3 - 2014-09-04"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
-msgid "ActiveSupport"
+msgid "h3. Improvements"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:37(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(span)
-msgid "Testing"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:39(span)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:37(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:37(a)
-msgid "SetupAndTeardown"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:59(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:39(span)
-msgid "ClassMethods"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:84(a)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:39(span)
-msgid "ForClassicTestUnit"
-msgstr ""
-
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown.html:81(p)
 msgid ""
-"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>, <span "
-"class=\"object_link\"><placeholder-3/></span>"
+"  * Supported Rails 4.0.0.\n"
+"    After this version, test-unit-rails requires test-unit-activesupport\n"
+"    1.0.2 or later.\n"
+"    In this version, test-unit-rails drops to support rails 3.2.16 or older.\n"
+"    If you want to use this gem with Rails 3.2.16 or older, please use\n"
+"    1.0.2 version."
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:6(title)
+msgid "h2(#1-0-2). 1.0.2 - 2012-07-05"
+msgstr ""
+
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods &mdash; test-"
-"unit-rails"
+"  * Supported Bundler 1.2.0.pre.1.\n"
+"    [GitHub#1] [Reported by Michael D.W. Prendergast]"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:17(script)
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:17(script)
-msgid "relpath = '../../..'; if (relpath != '') relpath += '/';"
+msgid "h3. Thanks"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:36(a)
-msgid "Index (C)"
+msgid "  * Michael D.W. Prendergast"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html:59(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ClassMethods"
+msgid "h2(#1-0-1). 1.0.1 - 2012-06-03"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:6(title)
 msgid ""
-"Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit &mdash; "
-"test-unit-rails"
+"  * Extracted ActiveSupport related codes into test-unit-activesupport\n"
+"    gem and depended on it."
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:36(a)
-msgid "Index (F)"
+msgid "h2(#1-0-0). 1.0.0 - 2012-1-2"
 msgstr ""
 
-#: doc/reference/en/ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html:59(h1)
-msgid "Module: ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit"
+msgid "The first release!!!"
 msgstr ""
 
-#: doc/reference/en/frames.html:16(frameset)
+# Test
+msgid "Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>"
+msgstr ""
+
+# Test
 msgid ""
-"' + '<frame name=\"list\" src=\"class_list.html\"/>' + '<frame name=\"main\" "
-"src=\"' + name + '\"/>' + '"
+"This library is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU Lesser General Public\n"
+"License as published by the Free Software Foundation; either\n"
+"version 2.1 of the License, or (at your option) any later version."
 msgstr ""
 
-#: doc/reference/en/frames.html:9(script)
+# Test
 msgid ""
-"window.onload = function() { var match = window.location.hash.match(/^#!(."
-"+)/); var name = 'index.html'; if (match) { name = unescape(match[1]); } "
-"document.writeln('<placeholder-1/>'); }"
+"This library is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n"
+"Lesser General Public License for more details."
 msgstr ""
 
-#: doc/reference/en/file_list.html:49(a) doc/reference/en/_index.html:67(a)
-msgid "README"
-msgstr ""
-
-#: doc/reference/en/file_list.html:52(a) doc/reference/en/_index.html:70(a)
-msgid "news"
-msgstr ""
-
-#: doc/reference/en/_index.html:61(h1)
-msgid "Alphabetic Index"
-msgstr ""
-
-#: doc/reference/en/_index.html:63(h2)
-msgid "File Listing"
-msgstr ""
-
-#: doc/reference/en/_index.html:76(h2)
-msgid "Namespace Listing A-Z"
-msgstr ""
-
-#: doc/reference/en/_index.html:87(li)
-msgid "I"
-msgstr ""
-
-#: doc/reference/en/_index.html:91(a)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:37(span)
-msgid "IntegrationTest"
-msgstr ""
-
-#: doc/reference/en/_index.html:93(small)
-msgid "(ActionDispatch)"
-msgstr ""
-
-#: doc/reference/en/_index.html:102(li)
-msgid "R"
-msgstr ""
-
-#: doc/reference/en/_index.html:108(small)
-msgid "(Test::Unit)"
-msgstr ""
-
-#: doc/reference/en/_index.html:117(li)
-msgid "T"
-msgstr ""
-
-#: doc/reference/en/_index.html:130(li)
-msgid "U"
-msgstr ""
-
-#: doc/reference/en/_index.html:136(small)
-msgid "(Test)"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:6(title)
-msgid "Class: ActionDispatch::IntegrationTest &mdash; test-unit-rails"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:34(a)
-msgid "Index (I)"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:66(h1)
-msgid "Class: ActionDispatch::IntegrationTest"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:74(dt)
-msgid "Inherits:"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:76(span)
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:79(li)
-msgid "Object"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:84(a)
-msgid "show all"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:93(dt)
-msgid "Includes:"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:94(dd)
-msgid "Capybara::DSL"
-msgstr ""
-
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:101(dd)
-msgid "lib/test/unit/rails/test_help.rb"
-msgstr ""
-
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: doc/reference/en/ActionDispatch/IntegrationTest.html:0(None)
-msgid "translator-credits"
+# Test
+msgid ""
+"You should have received a copy of the GNU Lesser General Public\n"
+"License along with this library; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 msgstr ""
