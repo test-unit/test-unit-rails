@@ -40,7 +40,9 @@ Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar_gz = true
 end
 
-document_task = Packnga::DocumentTask.new(spec) do |t|
+document_task = Packnga::DocumentTask.new(spec) do |task|
+  task.original_language = "en"
+  task.translate_language = "ja"
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
