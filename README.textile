@@ -1,6 +1,6 @@
 h1. test-unit-rails
 
-"Web site":https://github.com/test-unit/test-unit-rails
+"Web site":http://test-unit.github.io/#test-unit-rails
 
 h2. Description
 
