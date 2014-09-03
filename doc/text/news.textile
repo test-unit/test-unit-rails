@@ -1,5 +1,16 @@
 h1. News
 
+h2(#1-0-3). 1.0.3 - 2014-09-04
+
+h3. Improvements
+
+  * Supported Rails 4.0.0.
+    After this version, test-unit-rails requires test-unit-activesupport
+    1.0.2 or later.
+    In this version, test-unit-rails drops to support rails 3.2.16 or older.
+    If you want to use this gem with Rails 3.2.16 or older, please use
+    1.0.2 version.
+
 h2(#1-0-2). 1.0.2 - 2012-07-05
 
 h3. Improvements
