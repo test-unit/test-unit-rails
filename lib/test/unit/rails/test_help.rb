@@ -16,11 +16,58 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
+
+if Rails.env.production?
+  abort("Abort testing: Your Rails environment is running in production mode!")
+end
+
+require "test-unit"
+require "test/unit/assertion-failed-error"
+
 require "test/unit/rails"
-
-require "rails/test_help"
-
 require "capybara/rails"
+require 'active_support/testing/constant_lookup'
+require 'action_controller'
+require 'action_controller/test_case'
+require 'action_dispatch/testing/integration'
+
+if defined?(ActiveRecord::Migration)
+  if ActiveRecord::Migration.respond_to?(:maintain_test_schema!)
+    ActiveRecord::Migration.maintain_test_schema!
+  else
+    ActiveRecord::Migration.check_pending!
+  end
+end
+
+if defined?(ActiveRecord::Base)
+  class ::Test::Unit::TestCase
+    include ActiveRecord::TestFixtures
+    self.fixture_path = "#{Rails.root}/test/fixtures/"
+
+    setup do
+      setup_fixtures
+    end
+
+    teardown do
+      teardown_fixtures
+    end
+  end
+
+  ActionDispatch::IntegrationTest.fixture_path = ::Test::Unit::TestCase.fixture_path
+end
+
+class ActionController::TestCase
+  setup do
+    @routes = Rails.application.routes
+  end
+  include ActiveRecord::TestFixtures
+
+  self.fixture_path = "#{Rails.root}/test/fixtures/"
+end
+
 class ActionDispatch::IntegrationTest
+  setup do
+    @routes = Rails.application.routes
+  end
   include Capybara::DSL
 end
