@@ -40,7 +40,7 @@ if defined?(ActiveRecord::Migration)
 end
 
 if defined?(ActiveRecord::Base)
-  class ::Test::Unit::TestCase
+  class ActiveSupport::TestCase
     include ActiveRecord::TestFixtures
     self.fixture_path = "#{Rails.root}/test/fixtures/"
 
@@ -53,7 +53,7 @@ if defined?(ActiveRecord::Base)
     end
   end
 
-  ActionDispatch::IntegrationTest.fixture_path = ::Test::Unit::TestCase.fixture_path
+  ActionDispatch::IntegrationTest.fixture_path = ActiveSupport::TestCase.fixture_path
 end
 
 class ActionController::TestCase
