@@ -26,10 +26,10 @@ require "test/unit/assertion-failed-error"
 
 require "test/unit/rails"
 require "capybara/rails"
-require 'active_support/testing/constant_lookup'
-require 'action_controller'
-require 'action_controller/test_case'
-require 'action_dispatch/testing/integration'
+require "active_support/testing/constant_lookup"
+require "action_controller"
+require "action_controller/test_case"
+require "action_dispatch/testing/integration"
 
 if defined?(ActiveRecord::Migration)
   if ActiveRecord::Migration.respond_to?(:maintain_test_schema!)
