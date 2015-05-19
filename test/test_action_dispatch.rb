@@ -16,16 +16,9 @@
 
 require "test/unit/rails/test_help"
 
-class TestTestHelp < Test::Unit::TestCase
-  sub_test_case("ActionController::TestCase") do
-    def test_defined
-      assert_true(ActionController.const_defined?(:TestCase))
-    end
-  end
-
-  sub_test_case("ActionDispatch::IntegrationTest") do
-    def test_defined
-      assert_true(ActionDispatch.const_defined?(:IntegrationTest))
-    end
+class TestActionDispatch < Test::Unit::TestCase
+  # TODO: Remove it and add more meaningful test
+  def test_defined
+    assert_true(ActionDispatch.const_defined?(:IntegrationTest))
   end
 end
