@@ -24,6 +24,8 @@ require 'yard'
 require 'bundler/gem_helper'
 require 'packnga'
 
+task :default => :test
+
 base_dir = File.join(File.dirname(__FILE__))
 
 class Bundler::GemHelper
@@ -46,4 +48,9 @@ document_task = Packnga::DocumentTask.new(spec) do |task|
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
+end
+
+desc "Run test"
+task :test do
+  ruby("test/run-test.rb")
 end
