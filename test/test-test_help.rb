@@ -17,12 +17,6 @@
 require "test/unit/rails/test_help"
 
 class TestTestHelp < Test::Unit::TestCase
-  sub_test_case("ActiveSupport::TestCase") do
-    def test_defined
-      assert_true(ActiveSupport.const_defined?(:TestCase))
-    end
-  end
-
   sub_test_case("ActionController::TestCase") do
     def test_defined
       assert_true(ActionController.const_defined?(:TestCase))
