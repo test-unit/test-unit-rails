@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.files += Dir.glob("doc/text/**/*.textile")
   spec.test_files = Dir.glob("test/**/*.rb")
 
-  spec.add_runtime_dependency("rails")
+  spec.add_runtime_dependency("rails", ">= 4.0.2")
   spec.add_runtime_dependency("test-unit-activesupport", ">= 1.0.2")
   spec.add_runtime_dependency("test-unit-notify")
   spec.add_runtime_dependency("test-unit-capybara")
