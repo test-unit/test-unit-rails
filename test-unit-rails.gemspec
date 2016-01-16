@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: ruby -*-
 #
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -22,8 +22,7 @@ clean_white_space = lambda do |entry|
   entry.gsub(/(\A\n+|\n+\z)/, "") + "\n"
 end
 
-ENV["VERSION"] ||= Test::Unit::Rails::VERSION
-version = ENV["VERSION"].dup
+version = Test::Unit::Rails::VERSION.dup
 
 Gem::Specification.new do |spec|
   spec.name = "test-unit-rails"
