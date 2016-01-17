@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -16,15 +16,17 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-
 if Rails.env.production?
   abort("Abort testing: Your Rails environment is running in production mode!")
 end
 
-require "test-unit"
+require "test/unit/active_support"
+require "test/unit/notify"
+require "test/unit/rr"
+require "test/unit/capybara"
+
 require "test/unit/assertion-failed-error"
 
-require "test/unit/rails"
 require "capybara/rails"
 require "active_support/testing/constant_lookup"
 require "action_controller"

@@ -17,8 +17,3 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 require "test/unit/rails/version"
-
-require "test/unit/active_support"
-require "test/unit/notify"
-require "test/unit/rr"
-require "test/unit/capybara"
