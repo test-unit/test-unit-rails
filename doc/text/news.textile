@@ -1,5 +1,19 @@
 h1. News
 
+h2(#5-0-0). 5.0.0 - 2016-01-18
+
+Rails 5 support release.
+
+h2. Improvements
+
+  * Supported Rails 5.
+  * Required Rails 4 or later explicitly.
+    [GitHub#5][Patch by Charles Lowell]
+
+h2. Thanks
+
+  * Charles Lowell
+
 h2(#1-0-4). 1.0.4 - 2014-09-07
 
 Bug fixes release.
