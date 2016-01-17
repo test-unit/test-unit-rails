@@ -14,7 +14,7 @@ Add the following codes to your Gemfile:
 
 <pre>
 group :development, :test do
-  gem 'test-unit-rails', require: false
+  gem 'test-unit-rails'
 end
 </pre>
 
