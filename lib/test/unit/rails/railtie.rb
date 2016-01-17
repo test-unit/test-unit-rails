@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2016  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -16,5 +14,12 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-require "test/unit/rails/version"
-require "test/unit/rails/railtie"
+module TestUnitRails
+  class TestUnitRailtie < Rails::Railtie
+    rake_tasks do
+      unless defined?(Rails::TestTask)
+        load "test/unit/rails/testing.rake"
+      end
+    end
+  end
+end
