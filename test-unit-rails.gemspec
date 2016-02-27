@@ -36,6 +36,7 @@ Gem::Specification.new do |spec|
   spec.license = "LGPLv2 or later"
   spec.files = ["COPYING", "Gemfile", "Rakefile", "README.textile"]
   spec.files += Dir.glob("lib/**/*.rb")
+  spec.files += Dir.glob("lib/**/*.rake")
   spec.files += Dir.glob("doc/text/**/*.textile")
   spec.test_files = Dir.glob("test/**/*.rb")
 
