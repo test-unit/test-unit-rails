@@ -1,5 +1,4 @@
-# Copyright (C) 2015  Masafumi Yokoyama <yokoyama@clear-code.com>
-# Copyright (C) 2016  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2016  Kouhei Sutou <yokoyama@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -15,15 +14,30 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-require "test_helper"
+ENV["RAILS_ENV"] = "test"
 
-class TestActionDispatch < ActionDispatch::IntegrationTest
-  def test_assert_recognizes
-    assert_recognizes({
-                        :controller => "items",
-                        :action => "show",
-                        :id => "2",
-                      },
-                      "/items/1")
+require "rails/all"
+
+# For Rack::Builder#to_app
+module TestUnitRails
+  class Application < ::Rails::Application
   end
 end
+
+require "test/unit/rails/test_help"
+
+Rails.application.secrets[:secret_key_base] = 'xxx'
+Rails.application.routes.draw do
+  resources :items
+end
+
+class ItemsController
+end
+
+require "fileutils"
+
+db_dir = "tmp"
+FileUtils.rm_rf(db_dir)
+FileUtils.mkdir_p(db_dir)
+ActiveRecord::Base.establish_connection("adapter" => "sqlite3",
+                                        "database" => "#{db_dir}/test.sqlite3")
