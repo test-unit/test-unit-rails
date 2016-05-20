@@ -22,7 +22,7 @@ class TestActionDispatch < ActionDispatch::IntegrationTest
     assert_recognizes({
                         :controller => "items",
                         :action => "show",
-                        :id => "2",
+                        :id => "1",
                       },
                       "/items/1")
   end
