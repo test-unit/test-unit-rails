@@ -62,9 +62,12 @@ class ActionController::TestCase
   setup do
     @routes = Rails.application.routes
   end
-  include ActiveRecord::TestFixtures
 
-  self.fixture_path = "#{Rails.root}/test/fixtures/"
+  if defined?(ActiveRecord::Base)
+    include ActiveRecord::TestFixtures
+
+    self.fixture_path = "#{Rails.root}/test/fixtures/"
+  end
 end
 
 class ActionDispatch::IntegrationTest
