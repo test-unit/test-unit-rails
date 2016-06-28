@@ -1,5 +1,22 @@
 h1. News
 
+h2(#5-0-2). 5.0.2 - 2016-06-28
+
+h2. Improvements
+
+  * Supported Rails applications that don't use Active Record.
+    [GitHub#8][Patch by Akira Matsuda]
+
+h2. Fixes
+
+  * Fixed test failure. [Reported by Shita Koyanagi]
+
+h2. Thanks
+
+  * Shita Koyanagi
+
+  * Akira Matsuda
+
 h2(#5-0-1). 5.0.1 - 2016-02-27
 
 h2. Fixes
