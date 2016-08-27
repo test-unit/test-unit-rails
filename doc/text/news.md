@@ -7,11 +7,11 @@
   * Supported Rails applications that don't use Active Record.
     [GitHub#8][Patch by Akira Matsuda]
 
-## Fixes
+### Fixes
 
   * Fixed test failure. [Reported by Shita Koyanagi]
 
-## Thanks
+### Thanks
 
   * Shita Koyanagi
 
@@ -19,11 +19,11 @@
 
 ## 5.0.1 - 2016-02-27 {#version-5-0-1}
 
-## Fixes
+### Fixes
 
   * Added missing files to gem. [GitHub#7][Patch by y-yagi]
 
-## Thanks
+### Thanks
 
   * y-yagi
 
@@ -31,13 +31,13 @@
 
 Rails 5 support release.
 
-## Improvements
+### Improvements
 
   * Supported Rails 5.
   * Required Rails 4 or later explicitly.
     [GitHub#5][Patch by Charles Lowell]
 
-## Thanks
+### Thanks
 
   * Charles Lowell
 
