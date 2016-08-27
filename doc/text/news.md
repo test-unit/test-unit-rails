@@ -1,51 +1,51 @@
-h1. News
+# News
 
-h2(#5-0-2). 5.0.2 - 2016-06-28
+## 5.0.2 - 2016-06-28 {#version-5-0-2}
 
-h2. Improvements
+### Improvements
 
   * Supported Rails applications that don't use Active Record.
     [GitHub#8][Patch by Akira Matsuda]
 
-h2. Fixes
+## Fixes
 
   * Fixed test failure. [Reported by Shita Koyanagi]
 
-h2. Thanks
+## Thanks
 
   * Shita Koyanagi
 
   * Akira Matsuda
 
-h2(#5-0-1). 5.0.1 - 2016-02-27
+## 5.0.1 - 2016-02-27 {#version-5-0-1}
 
-h2. Fixes
+## Fixes
 
   * Added missing files to gem. [GitHub#7][Patch by y-yagi]
 
-h2. Thanks
+## Thanks
 
   * y-yagi
 
-h2(#5-0-0). 5.0.0 - 2016-01-18
+## 5.0.0 - 2016-01-18 {#version-5-0-0}
 
 Rails 5 support release.
 
-h2. Improvements
+## Improvements
 
   * Supported Rails 5.
   * Required Rails 4 or later explicitly.
     [GitHub#5][Patch by Charles Lowell]
 
-h2. Thanks
+## Thanks
 
   * Charles Lowell
 
-h2(#1-0-4). 1.0.4 - 2014-09-07
+## 1.0.4 - 2014-09-07 {#version-1-0-4}
 
 Bug fixes release.
 
-h3. Fixes
+### Fixes
 
   * Used the correct class to be extended for running tests by @Test::Unit@ .
     @ActiveSupport::TestCase@ is used now but before @Test::Unit::TestCase@ was.
@@ -53,9 +53,9 @@ h3. Fixes
     by @ActionController::TestCase@ (for controller tests) and
     @ActionDispatch::IntegrationTest@ (for integration tests).
 
-h2(#1-0-3). 1.0.3 - 2014-09-04
+## 1.0.3 - 2014-09-04 {#version-1-0-3}
 
-h3. Improvements
+### Improvements
 
   * Supported Rails 4.0.0.
     After this version, test-unit-rails requires test-unit-activesupport
@@ -64,24 +64,24 @@ h3. Improvements
     If you want to use this gem with Rails 3.2.16 or older, please use
     1.0.2 version.
 
-h2(#1-0-2). 1.0.2 - 2012-07-05
+## 1.0.2 - 2012-07-05 {#version-1-0-2}
 
-h3. Improvements
+### Improvements
 
   * Supported Bundler 1.2.0.pre.1.
     [GitHub#1] [Reported by Michael D.W. Prendergast]
 
-h3. Thanks
+### Thanks
 
   * Michael D.W. Prendergast
 
-h2(#1-0-1). 1.0.1 - 2012-06-03
+## 1.0.1 - 2012-06-03 {#version-1-0-1}
 
-h3. Improvements
+### Improvements
 
   * Extracted ActiveSupport related codes into test-unit-activesupport
     gem and depended on it.
 
-h2(#1-0-0). 1.0.0 - 2012-1-2
+## 1.0.0 - 2012-1-2 {#version-1-0-0}
 
 The first release!!!
