@@ -1,5 +1,18 @@
 # News
 
+## 5.0.3 - 2016-12-19 {#version-5-0-3}
+
+### Improvements
+
+  * Converted documents to Markdown from Textile.
+    [GitHub#10][Patch by takiy33]
+
+  * Supported `file_fixture`.
+
+### Thanks
+
+  * takiy33
+
 ## 5.0.2 - 2016-06-28 {#version-5-0-2}
 
 ### Improvements
