@@ -1,5 +1,11 @@
 # News
 
+## 5.0.5 - 2016-12-20 {#version-5-0-}
+
+### Improvements
+
+  * Required test-unit-activesupport 1.0.8 or later.
+
 ## 5.0.4 - 2016-12-20 {#version-5-0-4}
 
 ### Fixes
