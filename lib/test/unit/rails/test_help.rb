@@ -42,7 +42,7 @@ if defined?(ActiveRecord::Migration)
 end
 
 class ActiveSupport::TestCase
-  self.file_fixture_path = "#{Rails.root}/test/fixtures/files"
+  self.file_fixture_path = "#{Rails.root}/test/fixtures/files" if respond_to?(:file_fixture_path=)
 end
 
 if defined?(ActiveRecord::Base)
