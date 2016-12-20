@@ -1,5 +1,16 @@
 # News
 
+## 5.0.4 - 2016-12-20 {#version-5-0-4}
+
+### Fixes
+
+  * Supported Rails 4 again.
+    [GitHub#11][Patch by Akira Matsuda]
+
+### Thanks
+
+  * Akira Matsuda
+
 ## 5.0.3 - 2016-12-19 {#version-5-0-3}
 
 ### Improvements
