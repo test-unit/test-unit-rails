@@ -4,5 +4,6 @@ rvm:
 before_install:
   - gem update bundler
 notifications:
-  recipients:
-    - test-unit-commit@googlegroups.com
+  email:
+    recipients:
+      - test-unit-commit@googlegroups.com
