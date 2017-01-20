@@ -1,12 +1,12 @@
 # News
 
-## 5.0.5 - 2016-12-20
+## 5.0.5 - 2016-12-20 {#version-5-0-5}
 
 ### Improvements
 
   * Required test-unit-activesupport 1.0.8 or later.
 
-## 5.0.4 - 2016-12-20
+## 5.0.4 - 2016-12-20 {#version-5-0-4}
 
 ### Fixes
 
@@ -17,7 +17,7 @@
 
   * Akira Matsuda
 
-## 5.0.3 - 2016-12-19
+## 5.0.3 - 2016-12-19 {#version-5-0-3}
 
 ### Improvements
 
@@ -30,7 +30,7 @@
 
   * takiy33
 
-## 5.0.2 - 2016-06-28
+## 5.0.2 - 2016-06-28 {#version-5-0-2}
 
 ### Improvements
 
@@ -47,7 +47,7 @@
 
   * Akira Matsuda
 
-## 5.0.1 - 2016-02-27
+## 5.0.1 - 2016-02-27 {#version-5-0-1}
 
 ### Fixes
 
@@ -57,7 +57,7 @@
 
   * y-yagi
 
-## 5.0.0 - 2016-01-18
+## 5.0.0 - 2016-01-18 {#version-5-0-0}
 
 Rails 5 support release.
 
@@ -71,7 +71,7 @@ Rails 5 support release.
 
   * Charles Lowell
 
-## 1.0.4 - 2014-09-07
+## 1.0.4 - 2014-09-07 {#version-1-0-4}
 
 Bug fixes release.
 
@@ -83,7 +83,7 @@ Bug fixes release.
     by `ActionController::TestCase` (for controller tests) and
     `ActionDispatch::IntegrationTest` (for integration tests).
 
-## 1.0.3 - 2014-09-04
+## 1.0.3 - 2014-09-04 {#version-1-0-3}
 
 ### Improvements
 
@@ -94,7 +94,7 @@ Bug fixes release.
     If you want to use this gem with Rails 3.2.16 or older, please use
     1.0.2 version.
 
-## 1.0.2 - 2012-07-05
+## 1.0.2 - 2012-07-05 {#version-1-0-2}
 
 ### Improvements
 
@@ -105,13 +105,13 @@ Bug fixes release.
 
   * Michael D.W. Prendergast
 
-## 1.0.1 - 2012-06-03
+## 1.0.1 - 2012-06-03 {#version-1-0-1}
 
 ### Improvements
 
   * Extracted ActiveSupport related codes into test-unit-activesupport
     gem and depended on it.
 
-## 1.0.0 - 2012-1-2
+## 1.0.0 - 2012-1-2 {#version-1-0-0}
 
 The first release!!!
