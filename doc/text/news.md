@@ -77,11 +77,11 @@ Bug fixes release.
 
 ### Fixes
 
-  * Used the correct class to be extended for running tests by @Test::Unit@ .
-    @ActiveSupport::TestCase@ is used now but before @Test::Unit::TestCase@ was.
-    @ActiveSupport::TestCase@ (but @TestUnit::TestCase@ ) is inherited
-    by @ActionController::TestCase@ (for controller tests) and
-    @ActionDispatch::IntegrationTest@ (for integration tests).
+  * Used the correct class to be extended for running tests by `Test::Unit` .
+    `ActiveSupport::TestCase` is used now but before `Test::Unit::TestCase` was.
+    `ActiveSupport::TestCase` (but `TestUnit::TestCase` ) is inherited
+    by `ActionController::TestCase` (for controller tests) and
+    `ActionDispatch::IntegrationTest` (for integration tests).
 
 ## 1.0.3 - 2014-09-04 {#version-1-0-3}
 
