@@ -12,24 +12,24 @@ Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't support t
 
 Add the following codes to your Gemfile:
 
-<pre>
+```ruby
 group :development, :test do
   gem 'test-unit-rails'
 end
-</pre>
+```
 
 Update bundled gems:
 
-<pre>
+```sh
 % bundle update
-</pre>
+```
 
-Replace @"require 'rails/test_help'"@ in your test/test_helper.rb with the following codes:
+Replace `"require 'rails/test_help'"` in your test/test_helper.rb with the following codes:
 
-<pre>
+```ruby
 # require 'rails/test_help'
 require 'test/unit/rails/test_help'
-</pre>
+```
 
 Now you can use full test-unit 3.x features, RR integration and Capybara integration.
 

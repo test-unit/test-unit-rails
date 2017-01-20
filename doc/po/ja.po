@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2014-09-07 21:51+0900\n"
+"PO-Revision-Date: 2017-01-20 13:57+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -16,23 +16,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "h1. test-unit-rails"
+msgid "# test-unit-rails"
 msgstr ""
 
-msgid "\"Web site\":http://test-unit.github.io/#test-unit-rails"
+msgid "[Web site](http://test-unit.github.io/#test-unit-rails)"
 msgstr ""
 
-msgid "h2. Description"
-msgstr "h2. 説明"
+msgid "## Description"
+msgstr "## 説明"
 
 msgid ""
 "test-unit-rails is a Rails adapter for test-unit 3. You can use full test-unit"
-" 3 features, \"RR\":https://rubygems.org/gems/rr integration and \"Capybara\":http"
-"s://rubygems.org/gems/capybara integration with test-unit-rails."
+" 3 features, [RR](https://rubygems.org/gems/rr) integration and [Capybara](htt"
+"ps://rubygems.org/gems/capybara) integration with test-unit-rails."
 msgstr ""
 "test-unit-railsはtest-unit 3用のRailsアダプターです。test-unit-railsを使うとtest-unit 3のフル機能と"
-"\"RR\":https://rubygems.org/gems/rr や\"Capybara\":https://rubygems.org/gems/capyba"
-"ra との連携機能を使うことができます。"
+" [RR](https://rubygems.org/gems/rr) や [Capybara](https://rubygems.org/gems/cap"
+"ybara) との連携機能を使うことができます。"
 
 msgid ""
 "Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't support"
@@ -41,39 +41,39 @@ msgstr ""
 "RailsはRuby 1.8に同梱されているTest::UnitとMiniTestをサポートしていますがtest-unit 2はサポートしていません。Rai"
 "lsとtest-unit 2の組み合わせは動きますが、完全に動くというわけではありません。"
 
-msgid "h2. Install"
-msgstr "h2. インストール"
+msgid "## Install"
+msgstr "## インストール"
 
 msgid "Add the following codes to your Gemfile:"
 msgstr "以下のコードをGemfileに追加してください。"
 
 msgid ""
-"<pre>\n"
+"```ruby\n"
 "group :development, :test do\n"
 "  gem 'test-unit-rails'\n"
 "end\n"
-"</pre>"
+"```"
 msgstr ""
 
 msgid "Update bundled gems:"
 msgstr "バンドルするgemをアップデートします。"
 
 msgid ""
-"<pre>\n"
+"```sh\n"
 "% bundle update\n"
-"</pre>"
+"```"
 msgstr ""
 
 msgid ""
-"Replace @\"require 'rails/test_help'\"@ in your test/test_helper.rb with the fol"
+"Replace `\"require 'rails/test_help'\"` in your test/test_helper.rb with the fol"
 "lowing codes:"
-msgstr "test/test_helper.rb内の @\"require 'rails/test_help'\"@ を以下のコードで置き換えます。"
+msgstr "test/test_helper.rb内の `\"require 'rails/test_help'\"` を以下のコードで置き換えます。"
 
 msgid ""
-"<pre>\n"
+"```ruby\n"
 "# require 'rails/test_help'\n"
 "require 'test/unit/rails/test_help'\n"
-"</pre>"
+"```"
 msgstr ""
 
 msgid ""
@@ -81,8 +81,8 @@ msgid ""
 "ration."
 msgstr "これでTest::Unit 2.xのフル機能とRR・Capybaraとの連携機能を使えます。"
 
-msgid "h2. License"
-msgstr "h2. ライセンス"
+msgid "## License"
+msgstr "## ライセンス"
 
 msgid "LGPLv2.1 or later."
 msgstr "LGPLv2.1またはそれ以降のバージョン。"
@@ -92,43 +92,127 @@ msgid ""
 ")"
 msgstr "（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する権利を持ちます。）"
 
-msgid "h2. Authors"
-msgstr "h2. 作者"
+msgid "## Authors"
+msgstr "## 作者"
 
 msgid ""
 "* Kouhei Sutou\n"
 "* Haruka Yoshihara"
 msgstr ""
 
-msgid "h1. News"
+msgid "# News"
 msgstr ""
 
-msgid "h2(#1-0-4). 1.0.4 - 2014-09-07"
+msgid "## 5.0.5 - 2016-12-20"
+msgstr ""
+
+msgid "### Improvements"
+msgstr "### 改良"
+
+msgid "  * Required test-unit-activesupport 1.0.8 or later."
+msgstr "  * test-unit-activesupport 1.0.8 以降を必須にした。"
+
+msgid "## 5.0.4 - 2016-12-20"
+msgstr ""
+
+msgid "### Fixes"
+msgstr "### 修正"
+
+msgid ""
+"  * Supported Rails 4 again.\n"
+"    [GitHub#11][Patch by Akira Matsuda]"
+msgstr ""
+"  * Rails 4 で動かなくなっていたのを修正。\n"
+"    [GitHub#11][Akira Matsudaさんがパッチ提供]"
+
+msgid "### Thanks"
+msgstr "### 感謝"
+
+msgid "  * Akira Matsuda"
+msgstr ""
+
+msgid "## 5.0.3 - 2016-12-19"
+msgstr ""
+
+msgid ""
+"  * Converted documents to Markdown from Textile.\n"
+"    [GitHub#10][Patch by takiy33]"
+msgstr ""
+"  * ドキュメントファイルのフォーマットをTextileからMarkdownにした。\n"
+"    [GitHub#10] [takiy33さんがパッチ提供]"
+
+msgid "  * Supported `file_fixture`."
+msgstr "  * `file_fixture` をサポート。"
+
+msgid "  * takiy33"
+msgstr ""
+
+msgid "## 5.0.2 - 2016-06-28"
+msgstr ""
+
+msgid ""
+"  * Supported Rails applications that don't use Active Record.\n"
+"    [GitHub#8][Patch by Akira Matsuda]"
+msgstr ""
+"  * Active Recordを使用していないRailsアプリでも動作するようにした。\n"
+"    [GitHub#8][Akira Matsudaさんがパッチ提供]"
+
+msgid "  * Fixed test failure. [Reported by Shita Koyanagi]"
+msgstr "  * テストが失敗しているのを修正。[Shita Koyanagiさんが報告]"
+
+msgid "  * Shita Koyanagi"
+msgstr ""
+
+msgid "## 5.0.1 - 2016-02-27"
+msgstr ""
+
+msgid "  * Added missing files to gem. [GitHub#7][Patch by y-yagi]"
+msgstr "  * gemに足りないファイルを追加。 [GitHub#7] [y-yagiさんがパッチ提供]"
+
+msgid "  * y-yagi"
+msgstr ""
+
+msgid "## 5.0.0 - 2016-01-18"
+msgstr ""
+
+msgid "Rails 5 support release."
+msgstr "Rails 5 のサポートリリースです。"
+
+msgid ""
+"  * Supported Rails 5.\n"
+"  * Required Rails 4 or later explicitly.\n"
+"    [GitHub#5][Patch by Charles Lowell]"
+msgstr ""
+"  * Rails 5 をサポートした。\n"
+"  * Rails 4 以降だけをサポートするようにした。\n"
+"    [GitHub#5][Charles Lowellさんがパッチ提供]"
+
+msgid "  * Charles Lowell"
+msgstr ""
+
+msgid "## 1.0.4 - 2014-09-07"
 msgstr ""
 
 msgid "Bug fixes release."
 msgstr "バグフィックスリリースです。"
 
-msgid "h3. Fixes"
-msgstr "h3. 修正"
-
 msgid ""
-"  * Used the correct class to be extended for running tests by @Test::Unit@ .\n"
-"    @ActiveSupport::TestCase@ is used now but before @Test::Unit::TestCase@ wa"
+"  * Used the correct class to be extended for running tests by `Test::Unit` .\n"
+"    `ActiveSupport::TestCase` is used now but before `Test::Unit::TestCase` wa"
 "s.\n"
-"    @ActiveSupport::TestCase@ (but @TestUnit::TestCase@ ) is inherited\n"
-"    by @ActionController::TestCase@ (for controller tests) and\n"
-"    @ActionDispatch::IntegrationTest@ (for integration tests)."
+"    `ActiveSupport::TestCase` (but `TestUnit::TestCase` ) is inherited\n"
+"    by `ActionController::TestCase` (for controller tests) and\n"
+"    `ActionDispatch::IntegrationTest` (for integration tests)."
 msgstr ""
-"  * @Test::Unit@ でテストするための正しいクラスを拡張するようにしました。\n"
-"    以前は @Test::Unit::TestCase@ を拡張していましたが、 今は @ActiveSupport::TestCase@ を拡張しています。\n"
-"    @ActiveSupport::TestCase@ ( @TestUnit::TestCase@ ではなく) は @ActionController::TestCase@ (コントローラテスト用) や @ActionDispatch::IntegrationTest@ (インテグレーションテスト用) に継承されているからです。"
+"  * `Test::Unit` でテストするための正しいクラスを拡張するようにしました。\n"
+"    以前は `Test::Unit::TestCase` を拡張していましたが、 今は `ActiveSupport::TestCase` を拡張してい"
+"ます。\n"
+"    `ActiveSupport::TestCase` ( `TestUnit::TestCase` ではなく) は `ActionController"
+"::TestCase` (コントローラテスト用) や `ActionDispatch::IntegrationTest` (インテグレーションテスト用) に"
+"継承されているからです。"
 
-msgid "h2(#1-0-3). 1.0.3 - 2014-09-04"
+msgid "## 1.0.3 - 2014-09-04"
 msgstr ""
-
-msgid "h3. Improvements"
-msgstr "h3. 改良"
 
 msgid ""
 "  * Supported Rails 4.0.0.\n"
@@ -143,7 +227,7 @@ msgstr ""
 "このバージョンで、Rails3.2.16以前をサポートしなくなりました。\n"
 "もし3.2.16以前のRailsで使用したい場合は、test-unit-railsの1.0.2をお使いください。"
 
-msgid "h2(#1-0-2). 1.0.2 - 2012-07-05"
+msgid "## 1.0.2 - 2012-07-05"
 msgstr ""
 
 msgid ""
@@ -151,13 +235,10 @@ msgid ""
 "    [GitHub#1] [Reported by Michael D.W. Prendergast]"
 msgstr "Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさんが報告]"
 
-msgid "h3. Thanks"
-msgstr "h3. 感謝"
-
 msgid "  * Michael D.W. Prendergast"
 msgstr "  * Michael D.W. Prendergastさん"
 
-msgid "h2(#1-0-1). 1.0.1 - 2012-06-03"
+msgid "## 1.0.1 - 2012-06-03"
 msgstr ""
 
 msgid ""
@@ -165,14 +246,14 @@ msgid ""
 "    gem and depended on it."
 msgstr "ActiveSupport関連のコードをtest-unit-activesupport gemに抽出してそのgemを使うようにした。"
 
-msgid "h2(#1-0-0). 1.0.0 - 2012-1-2"
+msgid "## 1.0.0 - 2012-1-2"
 msgstr ""
 
 msgid "The first release!!!"
 msgstr "最初のリリース！"
 
-# Test
-msgid "Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>"
+# TestUnitRails
+msgid "Copyright (C) 2016  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
 # Test
@@ -196,4 +277,8 @@ msgid ""
 "You should have received a copy of the GNU Lesser General Public\n"
 "License along with this library; if not, write to the Free Software\n"
 "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
+msgstr ""
+
+# Test
+msgid "Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
