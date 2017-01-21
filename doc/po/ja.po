@@ -103,7 +103,7 @@ msgstr ""
 msgid "# News"
 msgstr ""
 
-msgid "## 5.0.5 - 2016-12-20"
+msgid "## 5.0.5 - 2016-12-20 {#version-5-0-5}"
 msgstr ""
 
 msgid "### Improvements"
@@ -112,7 +112,7 @@ msgstr "### 改良"
 msgid "  * Required test-unit-activesupport 1.0.8 or later."
 msgstr "  * test-unit-activesupport 1.0.8 以降を必須にした。"
 
-msgid "## 5.0.4 - 2016-12-20"
+msgid "## 5.0.4 - 2016-12-20 {#version-5-0-4}"
 msgstr ""
 
 msgid "### Fixes"
@@ -131,7 +131,7 @@ msgstr "### 感謝"
 msgid "  * Akira Matsuda"
 msgstr ""
 
-msgid "## 5.0.3 - 2016-12-19"
+msgid "## 5.0.3 - 2016-12-19 {#version-5-0-3}"
 msgstr ""
 
 msgid ""
@@ -147,7 +147,7 @@ msgstr "  * `file_fixture` をサポート。"
 msgid "  * takiy33"
 msgstr ""
 
-msgid "## 5.0.2 - 2016-06-28"
+msgid "## 5.0.2 - 2016-06-28 {#version-5-0-2}"
 msgstr ""
 
 msgid ""
@@ -163,7 +163,7 @@ msgstr "  * テストが失敗しているのを修正。[Shita Koyanagiさん�
 msgid "  * Shita Koyanagi"
 msgstr ""
 
-msgid "## 5.0.1 - 2016-02-27"
+msgid "## 5.0.1 - 2016-02-27 {#version-5-0-1}"
 msgstr ""
 
 msgid "  * Added missing files to gem. [GitHub#7][Patch by y-yagi]"
@@ -172,7 +172,7 @@ msgstr "  * gemに足りないファイルを追加。 [GitHub#7] [y-yagiさん�
 msgid "  * y-yagi"
 msgstr ""
 
-msgid "## 5.0.0 - 2016-01-18"
+msgid "## 5.0.0 - 2016-01-18 {#version-5-0-0}"
 msgstr ""
 
 msgid "Rails 5 support release."
@@ -190,7 +190,7 @@ msgstr ""
 msgid "  * Charles Lowell"
 msgstr ""
 
-msgid "## 1.0.4 - 2014-09-07"
+msgid "## 1.0.4 - 2014-09-07 {#version-1-0-4}"
 msgstr ""
 
 msgid "Bug fixes release."
@@ -211,7 +211,7 @@ msgstr ""
 "::TestCase` (コントローラテスト用) や `ActionDispatch::IntegrationTest` (インテグレーションテスト用) に"
 "継承されているからです。"
 
-msgid "## 1.0.3 - 2014-09-04"
+msgid "## 1.0.3 - 2014-09-04 {#version-1-0-3}"
 msgstr ""
 
 msgid ""
@@ -227,7 +227,7 @@ msgstr ""
 "このバージョンで、Rails3.2.16以前をサポートしなくなりました。\n"
 "もし3.2.16以前のRailsで使用したい場合は、test-unit-railsの1.0.2をお使いください。"
 
-msgid "## 1.0.2 - 2012-07-05"
+msgid "## 1.0.2 - 2012-07-05 {#version-1-0-2}"
 msgstr ""
 
 msgid ""
@@ -238,7 +238,7 @@ msgstr "Bundler 1.2.0.pre.1対応。 [GitHub#1] [Michael D.W. Prendergastさん�
 msgid "  * Michael D.W. Prendergast"
 msgstr "  * Michael D.W. Prendergastさん"
 
-msgid "## 1.0.1 - 2012-06-03"
+msgid "## 1.0.1 - 2012-06-03 {#version-1-0-1}"
 msgstr ""
 
 msgid ""
@@ -246,7 +246,7 @@ msgid ""
 "    gem and depended on it."
 msgstr "ActiveSupport関連のコードをtest-unit-activesupport gemに抽出してそのgemを使うようにした。"
 
-msgid "## 1.0.0 - 2012-1-2"
+msgid "## 1.0.0 - 2012-1-2 {#version-1-0-0}"
 msgstr ""
 
 msgid "The first release!!!"
