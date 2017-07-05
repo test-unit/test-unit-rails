@@ -4,10 +4,18 @@
 
 ### Improvements
 
+  * Updated document.
+    [GitHub#12][Patch by Haruka Yoshihara]
+
+  * Migrated document markup to Markdown from Textile.
+    [GitHub#13][Patch by Haruka Yoshihara]
+
   * Supported Rails 5.1.2.
     [GitHub#14][Reported by naofumi-fujii]
 
 ### Thanks
+
+  * Haruka Yoshihara
 
   * naofumi-fujii
 
