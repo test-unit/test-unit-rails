@@ -1,4 +1,4 @@
-# Copyright (C) 2016  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2017  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -14,13 +14,24 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
+require "rails/command"
 require "test/unit/autorunner"
 
-if defined?(ENGINE_ROOT)
-  $LOAD_PATH << File.expand_path("test", ENGINE_ROOT)
-else
-  $LOAD_PATH << File.expand_path("../../test", APP_PATH)
-end
+module Rails
+  module Command
+    class TestCommand < Base
+      no_commands do
+        def help
+          perform
+        end
+      end
 
-ARGV.unshift("--default-test-path=test")
-exit(Test::Unit::AutoRunner.run(true))
+      def perform(*)
+        $LOAD_PATH << Rails::Command.root.join("test").to_s
+
+        ARGV.unshift("--default-test-path=test")
+        exit(Test::Unit::AutoRunner.run(true))
+      end
+    end
+  end
+end

@@ -1,6 +1,6 @@
-# -*- coding: utf-8; mode: ruby -*-
+# -*- ruby -*-
 #
-# Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2017  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -40,7 +40,7 @@ Gem::Specification.new do |spec|
   spec.files += Dir.glob("doc/text/**/*.md")
   spec.test_files = Dir.glob("test/**/*.rb")
 
-  spec.add_runtime_dependency("rails", ">= 4.0.2")
+  spec.add_runtime_dependency("rails", ">= 5.1.2")
   spec.add_runtime_dependency("test-unit-activesupport", ">= 1.0.8")
   spec.add_runtime_dependency("test-unit-notify")
   spec.add_runtime_dependency("test-unit-capybara", ">= 1.0.5")

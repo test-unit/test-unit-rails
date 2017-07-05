@@ -4,9 +4,9 @@
 
 ## Description
 
-test-unit-rails is a Rails adapter for test-unit 3. You can use full test-unit 3 features, [RR](https://rubygems.org/gems/rr) integration and [Capybara](https://rubygems.org/gems/capybara) integration with test-unit-rails.
+test-unit-rails is a Rails adapter for test-unit gem. You can use full test-unit gem features, [RR](https://rubygems.org/gems/rr) integration and [Capybara](https://rubygems.org/gems/capybara) integration with test-unit-rails.
 
-Rails supports Test::Unit bundled in Ruby 1.8 and MiniTest but doesn't support test-unit 2. Rails with test-unit 2 works but is not fully worked.
+Rails supports Minitest but doesn't support test-unit.
 
 ## Install
 
@@ -31,7 +31,7 @@ Replace `"require 'rails/test_help'"` in your test/test_helper.rb with the follo
 require 'test/unit/rails/test_help'
 ```
 
-Now you can use full test-unit 3.x features, RR integration and Capybara integration.
+Now you can use full test-unit gem features, RR integration and Capybara integration.
 
 ## License
 

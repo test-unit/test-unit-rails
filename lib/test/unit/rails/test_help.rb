@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-#
-# Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2017  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -28,6 +26,15 @@ require "test/unit/capybara"
 require "test/unit/assertion-failed-error"
 
 require "capybara/rails"
+require "capybara/minitest"
+module Capybara
+  remove_const(:Minitest)
+  module Minitest
+    module Assertions
+    end
+  end
+end
+
 require "active_support/testing/constant_lookup"
 require "action_controller"
 require "action_controller/test_case"

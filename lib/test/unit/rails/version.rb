@@ -1,4 +1,4 @@
-# Copyright (C) 2012-2016  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2017  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -17,7 +17,7 @@
 module Test
   module Unit
     module Rails
-      VERSION = "5.0.6"
+      VERSION = "5.1.2"
     end
   end
 end
