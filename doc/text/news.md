@@ -1,5 +1,16 @@
 # News
 
+## 5.1.2 - 2017-07-05 {#version-5-1-2}
+
+### Improvements
+
+  * Supported Rails 5.1.2.
+    [GitHub#14][Reported by naofumi-fujii]
+
+### Thanks
+
+  * naofumi-fujii
+
 ## 5.0.5 - 2016-12-20 {#version-5-0-5}
 
 ### Improvements
