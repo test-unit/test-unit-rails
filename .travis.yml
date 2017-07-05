@@ -1,12 +1,12 @@
 rvm:
   - 2.2
-  - 2.3.3
+  - 2.3.4
+  - 2.4.1
 gemfile:
-  - gemfiles/rails4.gemfile
   - gemfiles/rails5.gemfile
 before_install:
   - gem update bundler
 notifications:
   email:
     recipients:
-      - test-unit-commit@googlegroups.com
+      - test-unit@ml.commit-email.info
