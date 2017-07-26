@@ -42,7 +42,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency("rails", ">= 5.1.2")
   spec.add_runtime_dependency("test-unit-activesupport", ">= 1.0.8")
-  spec.add_runtime_dependency("test-unit-notify")
   spec.add_runtime_dependency("test-unit-capybara", ">= 1.0.5")
   spec.add_runtime_dependency("test-unit-rr", ">= 1.0.4")
   spec.add_runtime_dependency("test-unit", ">= 3.1.7")

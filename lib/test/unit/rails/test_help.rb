@@ -19,7 +19,6 @@ if Rails.env.production?
 end
 
 require "test/unit/active_support"
-require "test/unit/notify"
 require "test/unit/rr"
 require "test/unit/capybara"
 
