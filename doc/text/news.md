@@ -1,5 +1,18 @@
 # News
 
+## 5.1.3 - 2017-07-28 {#version-5-1-3}
+
+### Improvements
+
+  * Removed test-unit-notify dependency.
+
+  * Added `test:system` task support.
+    [GitHub:17][Patch by naofumi-fujii]
+
+### Thanks
+
+  * naofumi-fujii
+
 ## 5.1.2 - 2017-07-05 {#version-5-1-2}
 
 ### Improvements
