@@ -29,6 +29,7 @@ namespace :test do
     "mailers",
     "integration",
     "jobs",
+    "system",
   ].each do |component|
     Rake.application["test:#{component}"].clear_actions
     task component do
