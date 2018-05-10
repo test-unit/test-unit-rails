@@ -27,6 +27,7 @@ require 'packnga'
 task :default => :test
 
 base_dir = File.join(File.dirname(__FILE__))
+html_base_dir = File.join(base_dir, "doc", "html")
 
 class Bundler::GemHelper
   def version_tag
@@ -48,6 +49,13 @@ document_task = Packnga::DocumentTask.new(spec) do |task|
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
+  test_unit_github_io_dir_candidates = [
+    "../../www/test-unit.github.io",
+  ]
+  test_unit_github_io_dir = test_unit_github_io_dir_candidates.find do |dir|
+    File.directory?(dir)
+  end
+  task.index_html_dir = test_unit_github_io_dir
 end
 
 desc "Run test"
