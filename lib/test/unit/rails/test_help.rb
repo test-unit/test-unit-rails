@@ -89,8 +89,12 @@ class ActionDispatch::IntegrationTest
 end
 
 class ActionDispatch::SystemTestCase
-  setup before: :prepend
-  def setup_driver
+  setup before: :prepend do
     self.class.driver.use
+  end
+
+  # take screenshot before reset session
+  teardown after: :prepend do
+    take_failed_screenshot
   end
 end
