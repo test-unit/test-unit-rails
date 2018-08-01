@@ -38,6 +38,7 @@ require "active_support/testing/constant_lookup"
 require "action_controller"
 require "action_controller/test_case"
 require "action_dispatch/testing/integration"
+require "action_dispatch/system_test_case"
 
 if defined?(ActiveRecord::Migration)
   if ActiveRecord::Migration.respond_to?(:maintain_test_schema!)
@@ -85,4 +86,11 @@ class ActionDispatch::IntegrationTest
     @routes = Rails.application.routes
   end
   include Capybara::DSL
+end
+
+class ActionDispatch::SystemTestCase
+  setup before: :prepend
+  def setup_driver
+    self.class.driver.use
+  end
 end
