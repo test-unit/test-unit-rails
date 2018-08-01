@@ -21,17 +21,22 @@ require "rails/all"
 # For Rack::Builder#to_app
 module TestUnitRails
   class Application < ::Rails::Application
+    ::Rails.logger = config.logger = ActiveSupport::Logger.new($stdout)
   end
 end
 
 require "test/unit/rails/test_help"
+require "selenium-webdriver"
 
 Rails.application.secrets[:secret_key_base] = 'xxx'
 Rails.application.routes.draw do
   resources :items
 end
 
-class ItemsController
+class ItemsController < ActionController::Base
+  def index
+    render plain: "Hello"
+  end
 end
 
 require "fileutils"
