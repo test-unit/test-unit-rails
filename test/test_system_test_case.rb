@@ -1,5 +1,9 @@
 require "test_helper"
 
+if ENV["TRAVIS"]
+  Chromedriver.set_version "2.35"
+end
+
 class TestSystemTestCase < ActionDispatch::SystemTestCase
   driven_by :selenium, using: :headless_chrome, screen_size: [1920, 1080]
 
