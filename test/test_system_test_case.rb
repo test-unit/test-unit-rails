@@ -1,6 +1,7 @@
 require "test_helper"
 
 if ENV["TRAVIS"]
+  require "chromedriver/helper"
   Chromedriver.set_version "2.35"
 end
 
