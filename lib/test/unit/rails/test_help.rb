@@ -96,5 +96,6 @@ class ActionDispatch::SystemTestCase
   # take screenshot before reset session
   teardown after: :prepend do
     take_failed_screenshot
+    Capybara.reset_sessions!
   end
 end
