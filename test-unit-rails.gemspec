@@ -50,5 +50,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("packnga")
   spec.add_development_dependency("kramdown")
   spec.add_development_dependency("sqlite3")
+  spec.add_development_dependency("puma")
+  spec.add_development_dependency("selenium-webdriver")
+  spec.add_development_dependency("chromedriver-helper")
 end
 
