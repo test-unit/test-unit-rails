@@ -1,5 +1,16 @@
 # News
 
+## 5.2.1 - 2018-08-10 {#version-5-2-1}
+
+### Improvements
+
+  * Added support for `ActionDispatch::SystemTestCase`.
+    [GitHub#21][Patch by okkez]
+
+### Thanks
+
+  * okkez
+
 ## 5.1.3 - 2017-07-28 {#version-5-1-3}
 
 ### Improvements
@@ -7,7 +18,7 @@
   * Removed test-unit-notify dependency.
 
   * Added `test:system` task support.
-    [GitHub:17][Patch by naofumi-fujii]
+    [GitHub#17][Patch by naofumi-fujii]
 
 ### Thanks
 
