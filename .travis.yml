@@ -16,6 +16,5 @@ before_install:
   - google-chrome-stable --version
   - gem update bundler
 notifications:
-  email:
-    recipients:
-      - test-unit@ml.commit-email.info
+  webhooks:
+    - https://webhook.commit-email.info/
