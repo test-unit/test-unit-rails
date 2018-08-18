@@ -6,12 +6,17 @@ if ENV["TRAVIS"]
 end
 
 class TestSystemTestCase < ActionDispatch::SystemTestCase
-  driven_by :selenium, using: :headless_chrome, screen_size: [1920, 1080]
+  have_browser = ActionDispatch::SystemTesting.const_defined?(:Browser)
+  if have_browser
+    driver = :selenium
+    driven_by driver, using: browser, screen_size: [1920, 1080]
+  else
+    driver = :selenium_chrome_headless
+    driven_by driver, screen_size: [1920, 1080]
+  end
 
   test "render text" do
-    assert_equal(:selenium, Capybara.current_driver)
-    browser = self.class.driver.instance_variable_get(:@browser)
-    assert_equal(:chrome, browser.type)
+    assert_equal(driver, Capybara.current_driver)
     visit("/items")
     assert_text("Hello")
   end
