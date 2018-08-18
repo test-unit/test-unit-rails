@@ -9,7 +9,7 @@ class TestSystemTestCase < ActionDispatch::SystemTestCase
   have_browser = ActionDispatch::SystemTesting.const_defined?(:Browser)
   if have_browser
     driver = :selenium
-    driven_by driver, using: browser, screen_size: [1920, 1080]
+    driven_by driver, using: :headless_chrome, screen_size: [1920, 1080]
   else
     driver = :selenium_chrome_headless
     driven_by driver, screen_size: [1920, 1080]
