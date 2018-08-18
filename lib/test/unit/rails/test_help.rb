@@ -38,7 +38,6 @@ require "active_support/testing/constant_lookup"
 require "action_controller"
 require "action_controller/test_case"
 require "action_dispatch/testing/integration"
-require "action_dispatch/system_test_case"
 
 if defined?(ActiveRecord::Migration)
   if ActiveRecord::Migration.respond_to?(:maintain_test_schema!)
@@ -88,14 +87,19 @@ class ActionDispatch::IntegrationTest
   include Capybara::DSL
 end
 
-class ActionDispatch::SystemTestCase
-  setup before: :prepend do
-    self.class.driver.use
-  end
+begin
+  require "action_dispatch/system_test_case"
+rescue LoadError
+else
+  class ActionDispatch::SystemTestCase
+    setup before: :prepend do
+      self.class.driver.use
+    end
 
-  # take screenshot before reset session
-  teardown after: :prepend do
-    take_failed_screenshot
-    Capybara.reset_sessions!
+    # take screenshot before reset session
+    teardown after: :prepend do
+      take_failed_screenshot
+      Capybara.reset_sessions!
+    end
   end
 end
