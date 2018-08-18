@@ -12,6 +12,7 @@ rvm:
   - 2.5.1
 gemfile:
   - gemfiles/rails5.gemfile
+  - gemfiles/rails5.1.gemfile
 before_install:
   - google-chrome-stable --version
   - gem update bundler
