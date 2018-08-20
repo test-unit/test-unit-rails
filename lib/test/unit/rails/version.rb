@@ -17,7 +17,7 @@
 module Test
   module Unit
     module Rails
-      VERSION = "5.2.2"
+      VERSION = "5.2.3"
     end
   end
 end
