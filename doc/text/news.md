@@ -1,11 +1,22 @@
 # News
 
+## 5.2.2 - 2018-08-20 {#version-5-2-2}
+
+### Improvements
+
+  * Added support for Rails 5.1 without Puma.
+    [GitHub#21][Patch by neko maho]
+
+### Thanks
+
+  * neko maho
+
 ## 5.2.1 - 2018-08-10 {#version-5-2-1}
 
 ### Improvements
 
   * Added support for `ActionDispatch::SystemTestCase`.
-    [GitHub#21][Patch by okkez]
+    [GitHub#20][Patch by okkez]
 
 ### Thanks
 
