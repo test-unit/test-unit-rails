@@ -14,7 +14,7 @@ gemfile:
   - gemfiles/rails5.1-without-puma.gemfile
 before_install:
   - sudo apt update -qq
-  - sudo apt install -y -qq chromium-chromedriver
+  - sudo apt install -y chromium-driver
   - chromedriver --version
   - gem update bundler
 notifications:
