@@ -1,6 +1,4 @@
 sudo: required
-addons:
-  - chrome: stable
 
 env:
   global:
@@ -15,9 +13,8 @@ gemfile:
   - gemfiles/rails5.1.gemfile
   - gemfiles/rails5.1-without-puma.gemfile
 before_install:
-  - google-chrome-stable --version
-  - dpkg -l | grep chrome
-  - apt search chrom
+  - sudo apt update -qq
+  - sudo apt install -y -qq chromium-chromedriver
   - gem update bundler
 notifications:
   webhooks:
