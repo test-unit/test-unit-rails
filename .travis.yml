@@ -15,6 +15,7 @@ gemfile:
 before_install:
   - sudo apt update -qq
   - sudo apt install -y -qq chromium-chromedriver
+  - chromedriver --version
   - gem update bundler
 notifications:
   webhooks:
