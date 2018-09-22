@@ -16,6 +16,8 @@ gemfile:
   - gemfiles/rails5.1-without-puma.gemfile
 before_install:
   - google-chrome-stable --version
+  - dpkg -l | grep chrome
+  - apt search chrom
   - gem update bundler
 notifications:
   webhooks:
