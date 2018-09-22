@@ -1,11 +1,6 @@
 require "test_helper"
 
 if ActionDispatch::SystemTesting.const_defined?(:Server)
-  if ENV["TRAVIS"]
-    require "chromedriver/helper"
-    Chromedriver.set_version "2.35"
-  end
-
   class TestSystemTestCase < ActionDispatch::SystemTestCase
     have_browser = ActionDispatch::SystemTesting.const_defined?(:Browser)
     if have_browser
