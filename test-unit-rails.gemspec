@@ -1,6 +1,6 @@
 # -*- ruby -*-
 #
-# Copyright (C) 2012-2017  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2019  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -49,7 +49,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("rake")
   spec.add_development_dependency("packnga")
   spec.add_development_dependency("kramdown")
-  spec.add_development_dependency("sqlite3")
+  spec.add_development_dependency("sqlite3", "~> 1.3.6")
   spec.add_development_dependency("selenium-webdriver")
 end
 
