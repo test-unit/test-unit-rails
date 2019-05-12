@@ -1,23 +1,28 @@
-sudo: required
+notifications:
+  webhooks:
+    - https://webhook.commit-email.info/
+
+dist: xenial
 
 env:
   global:
     DISPLAY: ":99.0"
 
 rvm:
-  - 2.3.7
-  - 2.4.4
-  - 2.5.1
+  - 2.4
+  - 2.5
   - 2.6
+
 gemfile:
   - gemfiles/rails5.gemfile
   - gemfiles/rails5.1.gemfile
   - gemfiles/rails5.1-without-puma.gemfile
+
+addons:
+  apt:
+    packages:
+      - chromium-chromedriver
+
 before_install:
-  - sudo apt update -qq
-  - sudo apt install -y chromium-chromedriver
   - sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/
   - chromedriver --version
-notifications:
-  webhooks:
-    - https://webhook.commit-email.info/
