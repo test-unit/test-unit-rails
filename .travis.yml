@@ -22,7 +22,3 @@ addons:
   apt:
     packages:
       - chromium-chromedriver
-
-before_install:
-  - sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/
-  - chromedriver --version
