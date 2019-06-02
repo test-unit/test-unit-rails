@@ -8,16 +8,41 @@ env:
   global:
     DISPLAY: ":99.0"
 
-rvm:
-  - 2.4
-  - 2.5
-  - 2.6
-
-gemfile:
-  - gemfiles/rails6.gemfile
-  - gemfiles/rails5.gemfile
-  - gemfiles/rails5.1.gemfile
-  - gemfiles/rails5.1-without-puma.gemfile
+matrix:
+  include:
+    - name: "Ruby 2.6 & Rails 6"
+      rvm: 2.6
+      gemfile: gemfiles/rails6.gemfile
+    - name: "Ruby 2.5 & Rails 6"
+      rvm: 2.5
+      gemfile: gemfiles/rails6.gemfile
+    - name: "Ruby 2.6 & Rails 5"
+      rvm: 2.6
+      gemfile: gemfiles/rails5.gemfile
+    - name: "Ruby 2.5 & Rails 5"
+      rvm: 2.5
+      gemfile: gemfiles/rails5.gemfile
+    - name: "Ruby 2.4 & Rails 5"
+      rvm: 2.4
+      gemfile: gemfiles/rails5.gemfile
+    - name: "Ruby 2.6 & Rails 5.1"
+      rvm: 2.6
+      gemfile: gemfiles/rails5.1.gemfile
+    - name: "Ruby 2.5 & Rails 5.1"
+      rvm: 2.5
+      gemfile: gemfiles/rails5.1.gemfile
+    - name: "Ruby 2.4 & Rails 5.1"
+      rvm: 2.4
+      gemfile: gemfiles/rails5.1.gemfile
+    - name: "Ruby 2.6 & Rails 5.1 without Puma"
+      rvm: 2.6
+      gemfile: gemfiles/rails5.1-without-puma.gemfile
+    - name: "Ruby 2.5 & Rails 5.1 without Puma"
+      rvm: 2.5
+      gemfile: gemfiles/rails5.1-without-puma.gemfile
+    - name: "Ruby 2.4 & Rails 5.1 without Puma"
+      rvm: 2.4
+      gemfile: gemfiles/rails5.1-without-puma.gemfile
 
 addons:
   apt:
