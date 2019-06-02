@@ -14,8 +14,7 @@ addons:
       - chromium-chromedriver
 
 before_install:
-  - dpkg -l | grep chrom
-  - sudo rm /usr/bin/google-chrome
+  - sudo apt purge -y google-chrome-stable
 
 matrix:
   include:
