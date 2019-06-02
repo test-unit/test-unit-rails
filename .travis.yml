@@ -19,6 +19,12 @@ matrix:
     - name: "Ruby 2.6 & Rails 5"
       rvm: 2.6
       gemfile: gemfiles/rails5.gemfile
+      before_script:
+        - which chromedriver
+        - chromedriver --verbose &
+        - |
+          curl --data '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--headless"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}]}}' http://127.0.0.1:9515/session
+        - killall chromedriver
     - name: "Ruby 2.5 & Rails 5"
       rvm: 2.5
       gemfile: gemfiles/rails5.gemfile
