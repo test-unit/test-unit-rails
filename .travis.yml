@@ -22,6 +22,7 @@ matrix:
       before_script:
         - which chromedriver
         - chromedriver --verbose &
+        - sleep 3
         - |
           curl --data '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--headless"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}]}}' http://127.0.0.1:9515/session
         - killall chromedriver
