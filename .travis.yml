@@ -8,6 +8,15 @@ env:
   global:
     DISPLAY: ":99.0"
 
+addons:
+  apt:
+    packages:
+      - chromium-chromedriver
+
+before_install:
+  - dpkg -l | grep chrom
+  - sudo rm /usr/bin/google-chrome
+
 matrix:
   include:
     - name: "Ruby 2.6 & Rails 6"
@@ -19,13 +28,6 @@ matrix:
     - name: "Ruby 2.6 & Rails 5"
       rvm: 2.6
       gemfile: gemfiles/rails5.gemfile
-      before_script:
-        - which chromedriver
-        - chromedriver --verbose &
-        - sleep 3
-        - |
-          curl --data '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--headless"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--headless"]}}]}}' http://127.0.0.1:9515/session
-        - killall chromedriver
     - name: "Ruby 2.5 & Rails 5"
       rvm: 2.5
       gemfile: gemfiles/rails5.gemfile
@@ -50,8 +52,3 @@ matrix:
     - name: "Ruby 2.4 & Rails 5.1 without Puma"
       rvm: 2.4
       gemfile: gemfiles/rails5.1-without-puma.gemfile
-
-addons:
-  apt:
-    packages:
-      - chromium-chromedriver
