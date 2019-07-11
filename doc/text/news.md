@@ -1,5 +1,13 @@
 # News
 
+## 6.0.0 - 2019-07-11 {#version-6-0-0}
+
+### Improvements
+
+  * Added support for Rails 6.0.
+
+  * Stopped to load `test_helper.rb`.
+
 ## 5.2.2 - 2018-08-20 {#version-5-2-2}
 
 ### Improvements
