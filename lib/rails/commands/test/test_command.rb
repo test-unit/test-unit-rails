@@ -29,6 +29,7 @@ module Rails
       def perform(*)
         $LOAD_PATH << Rails::Command.root.join("test").to_s
 
+        ARGV.unshift("--exclude=\\Atest_helper\\.rb\\z")
         ARGV.unshift("--default-test-path=test")
         exit(Test::Unit::AutoRunner.run(true))
       end
