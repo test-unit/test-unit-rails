@@ -51,7 +51,7 @@ jobs:
           bundler-cache: true
       - name: Install dependencies
         run: |
-          apt update
-          apt install -y -V chromium-chromedriver
+          sudo apt update
+          sudo apt install -y -V chromium-chromedriver
       - name: Test
         run: bundle exec rake test
