@@ -1,5 +1,16 @@
 # News
 
+## 6.1.0 - 2021-01-13 {#version-6-1-0}
+
+### Improvements
+
+  * Added support for Rails 6.1.
+    [GitHub#23][Reported by Shugo Maeda]
+
+### Thanks
+
+  * Shugo Maeda
+
 ## 6.0.0 - 2019-07-11 {#version-6-0-0}
 
 ### Improvements
