@@ -1,0 +1,57 @@
+name: Test
+on:
+  - push
+  - pull_request
+jobs:
+  test:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: "Ruby 3.0 & Rails 6"
+            ruby-version: "3.0"
+            rails-version: "6"
+          - name: "Ruby 2.7 & Rails 6"
+            ruby-version: "2.7"
+            rails-version: "6"
+          - name: "Ruby 2.6 & Rails 6"
+            ruby-version: "2.6"
+            rails-version: "6"
+          - name: "Ruby 2.5 & Rails 6"
+            ruby-version: "2.5"
+            rails-version: "6"
+          - name: "Ruby 2.7 & Rails 6.0"
+            ruby-version: "2.7"
+            rails-version: "6.0"
+          - name: "Ruby 2.6 & Rails 6.0"
+            ruby-version: "2.6"
+            rails-version: "6.0"
+          - name: "Ruby 2.5 & Rails 6.0"
+            ruby-version: "2.5"
+            rails-version: "6.0"
+          - name: "Ruby 2.7 & Rails 5"
+            ruby-version: "2.7"
+            rails-version: "5"
+          - name: "Ruby 2.6 & Rails 5"
+            ruby-version: "2.6"
+            rails-version: "5"
+          - name: "Ruby 2.5 & Rails 5"
+            ruby-version: "2.5"
+            rails-version: "5"
+    env:
+      BUNDLE_GEMFILE: gemfiles/rails${{ matrix.rails-version }}.gemfile
+      DISPLAY: ":99.0"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+      - name: Install dependencies
+        run: |
+          apt update
+          apt install -y -V chromium-chromedriver
+      - name: Test
+        run: bundle exec rake test
