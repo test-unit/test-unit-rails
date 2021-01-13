@@ -3,8 +3,8 @@ on:
   - push
   - pull_request
 jobs:
-  test:
-    name: ${{ matrix.name }}
+  unit:
+    name: "Unit test: ${{ matrix.name }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -55,3 +55,19 @@ jobs:
           sudo apt install -y -V chromium-chromedriver
       - name: Test
         run: bundle exec rake test
+
+  app:
+    name: "App test: Rails ${{ matrix.rails-version }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        rails-version:
+          - "6"
+          - "6.0"
+          - "5"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test
+        run: |
+          docker-compose run --rm ruby-2.7-rails-${{ matrix.rails-version }}

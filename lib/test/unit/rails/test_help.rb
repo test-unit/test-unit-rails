@@ -49,6 +49,10 @@ end
 
 class ActiveSupport::TestCase
   self.file_fixture_path = "#{Rails.root}/test/fixtures/files" if respond_to?(:file_fixture_path=)
+
+  def skipped?
+    current_result.omission_count > 0
+  end
 end
 
 if defined?(ActiveRecord::Base)
