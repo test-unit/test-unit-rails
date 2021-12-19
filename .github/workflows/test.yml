@@ -10,6 +10,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - name: "Ruby 3.0 & Rails 7"
+            ruby-version: "3.0"
+            rails-version: "7"
+          - name: "Ruby 2.7 & Rails 7"
+            ruby-version: "2.7"
+            rails-version: "7"
           - name: "Ruby 3.0 & Rails 6"
             ruby-version: "3.0"
             rails-version: "6"
@@ -63,6 +69,7 @@ jobs:
       fail-fast: false
       matrix:
         rails-version:
+          - "7"
           - "6"
           - "6.0"
           - "5"
