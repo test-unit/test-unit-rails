@@ -1,13 +1,23 @@
 version: "3.7"
 
 services:
+  ruby-2.7-rails-7:
+    build:
+      context: .
+      dockerfile: dockerfiles/ruby.dockerfile
+      args:
+        FROM: ruby:2.7
+        RAILS_VERSION: 7
+    volumes:
+      - .:/source:delegated
+
   ruby-2.7-rails-6:
     build:
       context: .
       dockerfile: dockerfiles/ruby.dockerfile
       args:
         FROM: ruby:2.7
-        RAILS_VERSION: 6.0
+        RAILS_VERSION: 6
     volumes:
       - .:/source:delegated
 
@@ -17,7 +27,7 @@ services:
       dockerfile: dockerfiles/ruby.dockerfile
       args:
         FROM: ruby:2.7
-        RAILS_VERSION: 6.0.0
+        RAILS_VERSION: 6.0
     volumes:
       - .:/source:delegated
 
@@ -27,6 +37,6 @@ services:
       dockerfile: dockerfiles/ruby.dockerfile
       args:
         FROM: ruby:2.7
-        RAILS_VERSION: 5.0
+        RAILS_VERSION: 5
     volumes:
       - .:/source:delegated
