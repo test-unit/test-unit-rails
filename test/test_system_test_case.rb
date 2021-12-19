@@ -1,6 +1,16 @@
 require "test_helper"
 
 if ActionDispatch::SystemTesting.const_defined?(:Server)
+  # Workaround on GitHub Actions
+  module LongReadTimeout
+    def new_http_client
+      client = super
+      client.read_timeout = 120
+      client
+    end
+  end
+  Selenium::WebDriver::Remote::Http::Default.prepend(LongReadTimeout)
+
   class TestSystemTestCase < ActionDispatch::SystemTestCase
     have_browser = ActionDispatch::SystemTesting.const_defined?(:Browser)
     if have_browser
