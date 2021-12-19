@@ -55,9 +55,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - name: Install dependencies
-        run: |
-          sudo snap install chromium
+      - uses: nanasess/setup-chromedriver@v1
       - name: Test
         run: bundle exec rake test
 
