@@ -84,6 +84,25 @@ class ActionController::TestCase
   end
 end
 
+module TestUnitRails
+  module ActionViewSubTestCase
+    private
+
+    # Monkey-patching sub_test_case not to raise when fetching its default helper module
+    def sub_test_case_class(*)
+      klass = super
+      class << klass
+        define_method :anonymous? do
+          true
+        end
+      end
+      klass
+    end
+  end
+end
+
+ActionView::TestCase.singleton_class.prepend TestUnitRails::ActionViewSubTestCase
+
 class ActionDispatch::IntegrationTest
   setup do
     @routes = Rails.application.routes
