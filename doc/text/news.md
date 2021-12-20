@@ -4,6 +4,8 @@
 
 ### Improvements
 
+  * Dropped support for Rails 5.1.
+
   * Added support for Rails 7.0.
 
   * Added support for deep `sub_test_case`.
