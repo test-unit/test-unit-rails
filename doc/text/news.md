@@ -1,5 +1,18 @@
 # News
 
+## 7.0.0 - 2021-12-20 {#version-7-0-0}
+
+### Improvements
+
+  * Added support for Rails 7.0.
+
+  * Added support for deep `sub_test_case`.
+    [GitHub#24][Reported by Akira Matsuda]
+
+### Thanks
+
+  * Akira Matsuda
+
 ## 6.1.0 - 2021-01-13 {#version-6-1-0}
 
 ### Improvements
