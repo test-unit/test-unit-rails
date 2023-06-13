@@ -58,7 +58,13 @@ end
 if defined?(ActiveRecord::Base)
   class ActiveSupport::TestCase
     include ActiveRecord::TestFixtures
-    self.fixture_path = "#{Rails.root}/test/fixtures/"
+    if respond_to?(:fixture_paths=)
+      self.fixture_paths = ["#{Rails.root}/test/fixtures/"]
+      ActionDispatch::IntegrationTest.fixture_paths = self.fixture_paths
+    else
+      self.fixture_path = "#{Rails.root}/test/fixtures/"
+      ActionDispatch::IntegrationTest.fixture_path = self.fixture_path
+    end
 
     setup do
       setup_fixtures
@@ -68,8 +74,6 @@ if defined?(ActiveRecord::Base)
       teardown_fixtures
     end
   end
-
-  ActionDispatch::IntegrationTest.fixture_path = ActiveSupport::TestCase.fixture_path
 end
 
 class ActionController::TestCase
@@ -80,7 +84,11 @@ class ActionController::TestCase
   if defined?(ActiveRecord::Base)
     include ActiveRecord::TestFixtures
 
-    self.fixture_path = "#{Rails.root}/test/fixtures/"
+    if respond_to?(:fixture_paths=)
+      self.fixture_paths = ["#{Rails.root}/test/fixtures/"]
+    else
+      self.fixture_path = "#{Rails.root}/test/fixtures/"
+    end
   end
 end
 
