@@ -1,5 +1,19 @@
 # News
 
+## 7.0.1 - 2023-06-14 {#version-7-0-1}
+
+### Improvements
+
+  * Added support for Rails 7.1.
+
+    [GH-25](https://github.com/test-unit/test-unit-rails/issues/25)
+
+    Patch by Akira Matsuda
+
+### Thanks
+
+  * Akira Matsuda
+
 ## 7.0.0 - 2021-12-20 {#version-7-0-0}
 
 ### Improvements
