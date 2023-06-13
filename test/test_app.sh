@@ -31,6 +31,8 @@ group :development, :test do
   gem "test-unit-rails", path: "/source/"
 end
 GEMFILE
+# For Rails 5 Gemfile
+sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
 bundle update
 
 sed -i'' -e 's,rails/test_help,test/unit/rails/test_help,g' test/test_helper.rb
