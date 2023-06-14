@@ -31,10 +31,12 @@ namespace :test do
     "jobs",
     "system",
   ].each do |component|
-    Rake.application["test:#{component}"].clear_actions
-    task component do
-      path = File.expand_path("test/#{component}")
-      Test::Unit::AutoRunner.run(true, "test", [component])
+    if Rake.application.lookup("test:#{component}")
+      Rake.application["test:#{component}"].clear_actions
+      task component do
+        path = File.expand_path("test/#{component}")
+        Test::Unit::AutoRunner.run(true, "test", [component])
+      end
     end
   end
 
