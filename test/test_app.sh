@@ -49,6 +49,16 @@ fi
 rails generate model item name:string
 sed -i'' -e 's/# //g' test/models/item_test.rb
 rails db:migrate
-rails test -v | tee test.log
-grep models: test.log
-grep assertions test.log
+
+if [ $(echo "${RAILS_VERSION} >= 5.1" | bc) -eq 1 ]; then
+  # Test with `rails test` command
+  rails test -v | tee test.log
+  grep models: test.log
+  grep assertions test.log
+else
+  # Test with legacy `rake test` task
+  rake test:models -v | tee test.log
+  grep "1 assertions" test.log
+  rake test -v | tee test.log
+  grep assertions test.log
+fi
