@@ -22,5 +22,6 @@ RUN \
 
 ARG RAILS_VERSION
 RUN gem install rails -v "~>${RAILS_VERSION}.0"
+ENV RAILS_VERSION ${RAILS_VERSION}
 
 CMD /source/test/test_app.sh
