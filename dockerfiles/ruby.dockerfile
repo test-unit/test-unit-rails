@@ -12,6 +12,7 @@ RUN \
 RUN \
   apt update && \
   apt install -y -V \
+    bc \
     chromium-driver \
     chromium-sandbox \
     nodejs \
