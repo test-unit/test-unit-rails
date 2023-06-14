@@ -34,7 +34,7 @@ GEMFILE
 # For Rails 5 Gemfile
 sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
 # Rails 5.0 doesn't work with sqlite >= 1.4
-if rails --version | grep -Fq "^Rails 5.0"; then
+if [ "${RAILS_VERSION}" = "5.0" ]; then
   sed -i'' -e "s/gem 'sqlite3'/gem 'sqlite3', '~> 1.3.6'/" Gemfile
 fi
 bundle update
@@ -43,7 +43,7 @@ sed -i'' -e 's,rails/test_help,test/unit/rails/test_help,g' test/test_helper.rb
 # TODO: Implement.
 sed -i'' -e 's/parallelize/# parallelize/g' test/test_helper.rb
 
-if rails --version | grep -q "^Rails 6"; then
+if [[ "${RAILS_VERSION}" =~ ^6 ]]; then
   rails webpacker:install
 fi
 rails generate model item name:string
