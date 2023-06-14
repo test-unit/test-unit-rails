@@ -52,6 +52,15 @@ jobs:
           - name: "Ruby 2.5 & Rails 5"
             ruby-version: "2.5"
             rails-version: "5"
+          - name: "Ruby 2.7 & Rails 5.1"
+            ruby-version: "2.7"
+            rails-version: "5.1"
+          - name: "Ruby 2.6 & Rails 5.1"
+            ruby-version: "2.6"
+            rails-version: "5.1"
+          - name: "Ruby 2.5 & Rails 5.1"
+            ruby-version: "2.5"
+            rails-version: "5.1"
     env:
       BUNDLE_GEMFILE: gemfiles/rails${{ matrix.rails-version }}.gemfile
       DISPLAY: ":99.0"
@@ -76,6 +85,7 @@ jobs:
           - "6"
           - "6.0"
           - "5"
+          - "5.1"
     steps:
       - uses: actions/checkout@v3
       - name: Test
