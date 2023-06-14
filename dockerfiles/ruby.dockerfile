@@ -21,6 +21,6 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 ARG RAILS_VERSION
-RUN gem install rails -v "~>${RAILS_VERSION}"
+RUN gem install rails -v "~>${RAILS_VERSION}.0"
 
 CMD /source/test/test_app.sh
