@@ -50,3 +50,13 @@ services:
         RAILS_VERSION: 5.1
     volumes:
       - .:/source:delegated
+
+  ruby-2.7-rails-5.0:
+    build:
+      context: .
+      dockerfile: dockerfiles/ruby.dockerfile
+      args:
+        FROM: ruby:2.7
+        RAILS_VERSION: 5.0
+    volumes:
+      - .:/source:delegated
