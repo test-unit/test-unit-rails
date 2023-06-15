@@ -60,3 +60,13 @@ services:
         RAILS_VERSION: 5.0
     volumes:
       - .:/source:delegated
+
+  ruby-2.4-rails-4.2:
+    build:
+      context: .
+      dockerfile: dockerfiles/ruby.dockerfile
+      args:
+        FROM: ruby:2.4
+        RAILS_VERSION: 4.2
+    volumes:
+      - .:/source:delegated
