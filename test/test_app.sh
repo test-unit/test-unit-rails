@@ -31,6 +31,12 @@ group :development, :test do
   gem "test-unit-rails", path: "/source/"
 end
 GEMFILE
+if [[ "${RAILS_VERSION}" =~ ^4 ]]; then
+  cat >> Gemfile <<GEMFILE
+gem 'loofah', '< 2.21.0'
+GEMFILE
+fi
+
 # For Rails 5 Gemfile
 sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
 # Rails 4.x and 5.0 doesn't work with sqlite >= 1.4
