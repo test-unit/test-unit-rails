@@ -43,6 +43,10 @@ sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
 if [ $(echo "${RAILS_VERSION} < 5.1" | bc) -eq 1 ]; then
   sed -i'' -e "s/gem 'sqlite3'/gem 'sqlite3', '~> 1.3.6'/" Gemfile
 fi
+# Installing rubygems that includes bulndler 1 that is requred by Rails 4
+if [[ "${RAILS_VERSION}" =~ ^4 ]]; then
+  gem update --system 3.0.9
+fi
 bundle update
 
 sed -i'' -e 's,rails/test_help,test/unit/rails/test_help,g' test/test_helper.rb
