@@ -58,7 +58,7 @@ if [[ "${RAILS_VERSION}" =~ ^6 ]]; then
 fi
 rails generate model item name:string
 sed -i'' -e 's/# //g' test/models/item_test.rb
-rails db:migrate
+rake db:migrate
 
 if [ $(echo "${RAILS_VERSION} >= 5.1" | bc) -eq 1 ]; then
   # Test with `rails test` command
