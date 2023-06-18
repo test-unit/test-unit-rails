@@ -74,6 +74,10 @@ jobs:
             ruby-version: "2.4"
             rails-version: "4.2"
             bundler_version: 1
+          - name: "Ruby 2.3 & Rails 4.1"
+            ruby-version: "2.3"
+            rails-version: "4.1"
+            bundler_version: 1
     env:
       BUNDLE_GEMFILE: gemfiles/rails${{ matrix.rails-version }}.gemfile
       DISPLAY: ":99.0"
@@ -110,6 +114,8 @@ jobs:
             rails-version: "5.0"
           - ruby-version: "2.4"
             rails-version: "4.2"
+          - ruby-version: "2.3"
+            rails-version: "4.1"
     steps:
       - uses: actions/checkout@v3
       - name: Test
