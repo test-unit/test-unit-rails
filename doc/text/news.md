@@ -1,5 +1,11 @@
 # News
 
+## 7.0.2 - 2023-06-20 {#version-7-0-2}
+
+### Improvements
+
+  * Added support for Rails 4.1-5.1 again.
+
 ## 7.0.1 - 2023-06-14 {#version-7-0-1}
 
 ### Improvements
