@@ -89,7 +89,6 @@ jobs:
           rubygems: ${{ (matrix.ruby_version < '2.6' && 'default') || 'latest' }}
           bundler: ${{ matrix.bundler_version }}
           bundler-cache: true
-      - uses: nanasess/setup-chromedriver@v2
       - name: Test
         run: bundle exec rake test
 
