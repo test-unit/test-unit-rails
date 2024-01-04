@@ -25,6 +25,9 @@ ARG RAILS_VERSION
 
 # Ruby 2.4's bundled rubygems is too old that it fails to install rails
 RUN if ruby -v | grep -qF 'ruby 2.4.'; then gem update --system 3.3.26; fi
+# Ruby 2.7's bundled rubygems is so buggy that it ignores required_ruby_version limitation
+RUN if ruby -v | grep -qF 'ruby 2.7.'; then gem update --system 3.4.22; fi
+
 RUN gem install rails -v "~>${RAILS_VERSION}.0"
 
 ENV RAILS_VERSION ${RAILS_VERSION}
