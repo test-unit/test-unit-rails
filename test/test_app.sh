@@ -46,6 +46,9 @@ fi
 # Installing rubygems that includes bundler 1 that is required by Rails 4
 if [[ "${RAILS_VERSION}" =~ ^4 ]]; then
   gem update --system 3.0.9
+# Ruby 2.7's bundled rubygems is so buggy that it ignores required_ruby_version limitation
+elif ruby -v | grep -qF 'ruby 2.7.'; then
+  gem update --system 3.4.22
 fi
 bundle update
 
