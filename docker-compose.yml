@@ -11,6 +11,16 @@ services:
     volumes:
       - .:/source:delegated
 
+  ruby-2.7-rails-7.0:
+    build:
+      context: .
+      dockerfile: dockerfiles/ruby.dockerfile
+      args:
+        FROM: ruby:2.7
+        RAILS_VERSION: 7.0
+    volumes:
+      - .:/source:delegated
+
   ruby-2.7-rails-6:
     build:
       context: .
