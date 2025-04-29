@@ -109,7 +109,9 @@ module TestUnitRails
   end
 end
 
-ActionView::TestCase.singleton_class.prepend TestUnitRails::ActionViewSubTestCase
+ActiveSupport.on_load :action_view_test_case do
+  ActionView::TestCase.singleton_class.prepend TestUnitRails::ActionViewSubTestCase
+end
 
 class ActionDispatch::IntegrationTest
   setup do
