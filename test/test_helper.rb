@@ -29,7 +29,7 @@ end
 require "test/unit/rails/test_help"
 require "selenium-webdriver"
 
-Rails.application.secrets[:secret_key_base] = 'xxx'
+Rails.application.secrets[:secret_key_base] = 'xxx' if Rails.application.respond_to?(:secrets)
 Rails.application.routes.draw do
   resources :items
 end
