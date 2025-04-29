@@ -16,6 +16,7 @@
 
 ENV["RAILS_ENV"] = "test"
 
+require "logger"
 require "rails/all"
 
 # For Rack::Builder#to_app
