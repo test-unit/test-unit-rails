@@ -139,4 +139,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test
         run: |
-          docker-compose run --rm ruby-${{ matrix.ruby-version }}-rails-${{ matrix.rails-version }}
+          docker compose run --rm ruby-${{ matrix.ruby-version }}-rails-${{ matrix.rails-version }}
