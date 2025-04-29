@@ -1,6 +1,16 @@
 version: "3.7"
 
 services:
+  ruby-3.3-rails-8.0:
+    build:
+      context: .
+      dockerfile: dockerfiles/ruby.dockerfile
+      args:
+        FROM: ruby:3.3
+        RAILS_VERSION: 8.0
+    volumes:
+      - .:/source:delegated
+
   ruby-2.7-rails-7:
     build:
       context: .
