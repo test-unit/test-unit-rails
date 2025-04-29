@@ -29,6 +29,7 @@ RUN if ruby -v | grep -qF 'ruby 2.4.'; then gem update --system 3.3.26; fi
 RUN if ruby -v | grep -qF 'ruby 2.7.'; then gem update --system 3.4.22; fi
 
 RUN gem install rails -v "~>${RAILS_VERSION}.0"
+RUN if [[ "${RAILS_VERSION}" =~ ^6 ]]; then gem install concurrent-ruby -v 1.3.4 && gem uninstall concurrent-ruby -v 1.3.5; fi
 
 ENV RAILS_VERSION ${RAILS_VERSION}
 
