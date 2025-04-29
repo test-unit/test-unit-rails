@@ -39,9 +39,12 @@ fi
 
 # For Rails 5 Gemfile
 sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
-# Rails 4.x and 5.0 doesn't work with sqlite >= 1.4
+# Rails 4.x and 5.0 doesn't work with sqlite3 >= 1.4
 if [ $(echo "${RAILS_VERSION} < 5.1" | bc) -eq 1 ]; then
   sed -i'' -e "s/gem 'sqlite3'/gem 'sqlite3', '~> 1.3.6'/" Gemfile
+# Rails 6.x and 7.0 doesn't work with sqlite3 >=2
+elif [ $(echo "${RAILS_VERSION} < 7.1" | bc) -eq 1 ]; then
+  sed -i'' -e "s/gem 'sqlite3'/gem 'sqlite3', '~> 1.4'/" Gemfile
 fi
 # Installing rubygems that includes bundler 1 that is required by Rails 4
 if [[ "${RAILS_VERSION}" =~ ^4 ]]; then
