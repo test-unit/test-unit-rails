@@ -37,6 +37,12 @@ gem 'loofah', '< 2.21.0'
 GEMFILE
 fi
 
+if [[ "${RAILS_VERSION}" =~ ^6 ]]; then
+  cat >> Gemfile <<GEMFILE
+gem 'concurrent-ruby', '1.3.4'
+GEMFILE
+fi
+
 # For Rails 5 Gemfile
 sed -i'' -e "s/gem 'chromedriver-helper'/gem 'webdrivers'/" Gemfile
 # Rails 4.x and 5.0 doesn't work with sqlite3 >= 1.4
