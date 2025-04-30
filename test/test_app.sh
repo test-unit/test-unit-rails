@@ -21,7 +21,7 @@ set -o pipefail
 
 export MAKEFLAGS=-j$(nproc)
 
-rails new todo
+rails new todo --skip-bundle
 cd todo
 
 export PATH=$PWD/bin:$PATH
