@@ -10,6 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - name: "Ruby 3.4 & Rails 8.0"
+            ruby-version: "3.4"
+            rails-version: "8.0"
           - name: "Ruby 3.3 & Rails 8.0"
             ruby-version: "3.3"
             rails-version: "8.0"
@@ -141,13 +144,13 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - ruby-version: "3.3"
+          - ruby-version: "3.4"
             rails-version: "8.0"
-          - ruby-version: "2.7"
+          - ruby-version: "3.3"
             rails-version: "7"
-          - ruby-version: "2.7"
+          - ruby-version: "3.2"
             rails-version: "7.1"
-          - ruby-version: "2.7"
+          - ruby-version: "3.0"
             rails-version: "7.0"
           - ruby-version: "2.7"
             rails-version: "6"
