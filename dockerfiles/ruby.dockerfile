@@ -1,6 +1,8 @@
 ARG FROM
 FROM ${FROM}
 
+SHELL ["/bin/bash", "-c"]
+
 RUN \
   echo "debconf debconf/frontend select Noninteractive" | \
     debconf-set-selections
